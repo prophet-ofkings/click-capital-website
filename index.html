@@ -1,0 +1,4327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://www.google.com https://www.gstatic.com https://translate.google.com https://translate.googleapis.com https://api.exchangerate-api.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://translate.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.exchangerate-api.com https://www.google.com https://ipapi.co https://translate.googleapis.com; frame-src https://www.google.com https://translate.google.com;">
+    
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Click Capital - Fractional Luxury Asset Opportunity Platform</title>
+    
+    <meta name="description" content="Click Capital offers fractional ownership opportunities in luxury real estate and commodities including gold, diamonds, and rubies. Start from just $2,500 with our innovative platform.">
+    <meta name="keywords" content="fractional opportunity, real estate opportunity, luxury assets, gold opportunity, diamond opportunity, ruby opportunity, property opportunity, commodity opportunity, Click Capital">
+    <meta name="author" content="Click Capital">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Click Capital - Fractional Luxury Asset Opportunity Platform">
+    <meta property="og:description" content="Access premium real estate and commodities opportunities with fractional ownership. Start from $2,500 and build your luxury asset portfolio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.clickcapital.com">
+    <meta property="og:image" content="media/22.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Click Capital - Fractional Luxury Asset Opportunities">
+    <meta name="twitter:description" content="Access premium real estate and commodities opportunities with fractional ownership from just $2,500.">
+    <meta name="twitter:image" content="media/22.png">
+    
+    <link rel="icon" type="image/png" href="media/22.png">
+    <link rel="shortcut icon" type="image/png" href="media/22.png">
+    <link rel="apple-touch-icon" href="media/22.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '772170555357311');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=772170555357311&ev=PageView&noscript=1"
+    /></noscript>
+
+    <style>
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0F0F0F;
+            --bg-tertiary: #1A1A1A;
+            --text-primary: #FFFFFF;
+            --text-secondary: #BBBBBB;
+            --text-tertiary: #999999;
+            --primary-color: #00ffc8;
+            --accent-color: #30D158;
+            --border-color: #1F1F1F;
+            --border-light: #3A3A3A;
+            --radius-default: 12px;
+            --shadow-sm: 0 5px 22px rgba(0, 255, 200, 0.35);
+            --shadow-md: 0 6px 20px rgba(0, 255, 200, 0.3);
+            --primary-alpha-10: rgba(0, 255, 200, 0.1);
+            --primary-alpha-20: rgba(0, 255, 200, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+        }
+        
+        input, textarea {
+            -webkit-user-select: text !important;
+            -moz-user-select: text !important;
+            -ms-user-select: text !important;
+            user-select: text !important;
+        }
+        
+        img {
+            pointer-events: none;
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+        
+        body {
+            top: 0 !important;
+        }
+        
+        #google_translate_element {
+            display: none;
+        }
+
+        #three-js-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 clamp(1.5rem, 5vw, 40px);
+        }
+
+        .section {
+            padding: 120px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .cookie-consent {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(200%);
+            background: rgba(15, 15, 15, 0.98);
+            backdrop-filter: blur(30px);
+            border: 1px solid rgba(0, 255, 200, 0.3);
+            padding: 32px 40px;
+            border-radius: 20px;
+            z-index: 10001;
+            max-width: 950px;
+            width: calc(100% - 40px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(0, 255, 200, 0.15);
+            transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .cookie-consent.show {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .cookie-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 36px;
+        }
+
+        .cookie-icon {
+            font-size: 2.8rem;
+            filter: drop-shadow(0 0 25px rgba(0, 255, 200, 0.6));
+            flex-shrink: 0;
+        }
+
+        .cookie-text {
+            flex: 1;
+        }
+
+        .cookie-text h4 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--text-primary), var(--primary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.01em;
+        }
+
+        .cookie-text p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.75;
+        }
+
+        .cookie-actions {
+            display: flex;
+            gap: 14px;
+            flex-shrink: 0;
+        }
+
+        .cookie-btn {
+            padding: 13px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            font-family: 'Inter', sans-serif;
+            white-space: nowrap;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .cookie-accept {
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            color: #000;
+            box-shadow: 0 5px 22px rgba(0, 255, 200, 0.35);
+        }
+
+        .cookie-accept:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 32px rgba(0, 255, 200, 0.55);
+        }
+
+        .cookie-decline {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .cookie-decline:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            background: #0A1A18;
+        }
+
+        .playbook-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.95);
+            background: rgba(15, 15, 15, 0.98);
+            backdrop-filter: blur(30px);
+            border: 1px solid rgba(0, 255, 200, 0.2);
+            padding: 50px 60px;
+            border-radius: 20px;
+            z-index: 10002;
+            max-width: 1100px;
+            width: calc(100% - 60px);
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(0, 255, 200, 0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .playbook-popup.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .playbook-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            z-index: 10001;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .playbook-popup-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .playbook-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .playbook-header h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--text-primary), var(--primary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .playbook-header p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .playbook-form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .playbook-form-group {
+            margin-bottom: 0;
+        }
+
+        .playbook-form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .playbook-form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+        }
+
+        .playbook-form input,
+        .playbook-form select {
+            width: 100%;
+            padding: 16px 20px;
+            background: #1A1A1A;
+            border: 1px solid #3A3A3A;
+            border-radius: 8px;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .playbook-form select {
+            cursor: pointer;
+        }
+
+        .playbook-phone-grid {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 10px;
+        }
+
+        .playbook-form input:focus,
+        .playbook-form select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            background: #1F1F1F;
+        }
+
+        .playbook-form input::placeholder {
+            color: #666666;
+        }
+
+        .playbook-form select option {
+            background: #1a1a1a;
+            color: var(--text-primary);
+        }
+
+        .slider-container {
+            padding: 40px 30px;
+            background: linear-gradient(145deg, rgba(20, 20, 20, 0.8), rgba(10, 10, 10, 0.6));
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 35px;
+        }
+
+        .slider-currency {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .slider-value {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #FFFFFF;
+            letter-spacing: -0.03em;
+            font-family: 'Inter', sans-serif;
+            text-shadow: 0 2px 20px rgba(0, 255, 200, 0.2);
+        }
+
+        .slider-wrapper {
+            position: relative;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        .playbook-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 8px;
+            border-radius: 20px;
+            background: transparent;
+            outline: none;
+            position: relative;
+            cursor: pointer;
+            z-index: 3;
+        }
+
+        .slider-track-bg {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            height: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .slider-track-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(255, 255, 255, 0.02) 50%, 
+                transparent 100%);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+        }
+
+        .slider-track-fill {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            height: 8px;
+            background: linear-gradient(90deg, 
+                var(--primary-color) 0%, 
+                #00D9A3 50%,
+                var(--accent-color) 100%);
+            border-radius: 20px;
+            pointer-events: none;
+            transition: width 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 
+                0 0 20px rgba(0, 255, 200, 0.4),
+                0 2px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .slider-start-point {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+            width: 12px;
+            height: 12px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            box-shadow: 
+                0 0 0 3px rgba(0, 255, 200, 0.2),
+                0 0 15px rgba(0, 255, 200, 0.6),
+                0 0 30px rgba(0, 255, 200, 0.3);
+            pointer-events: none;
+            z-index: 2;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { 
+                box-shadow: 
+                    0 0 0 3px rgba(0, 255, 200, 0.2),
+                    0 0 15px rgba(0, 255, 200, 0.6),
+                    0 0 30px rgba(0, 255, 200, 0.3);
+            }
+            50% { 
+                box-shadow: 
+                    0 0 0 5px rgba(0, 255, 200, 0.3),
+                    0 0 20px rgba(0, 255, 200, 0.8),
+                    0 0 40px rgba(0, 255, 200, 0.4);
+            }
+        }
+
+        .playbook-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #FFFFFF, #E0E0E0);
+            cursor: grab;
+            box-shadow: 
+                0 4px 12px rgba(0, 0, 0, 0.3),
+                inset 0 1px 2px rgba(255, 255, 255, 0.5),
+                0 0 0 2px rgba(0, 255, 200, 0.3);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .playbook-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+            box-shadow: 
+                0 6px 16px rgba(0, 0, 0, 0.4),
+                inset 0 1px 2px rgba(255, 255, 255, 0.5),
+                0 0 0 4px rgba(0, 255, 200, 0.4),
+                0 0 20px rgba(0, 255, 200, 0.3);
+        }
+
+        .playbook-slider::-webkit-slider-thumb:active {
+            cursor: grabbing;
+            transform: scale(1.1);
+        }
+
+        .playbook-slider::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #FFFFFF, #E0E0E0);
+            cursor: grab;
+            border: none;
+            box-shadow: 
+                0 4px 12px rgba(0, 0, 0, 0.3),
+                inset 0 1px 2px rgba(255, 255, 255, 0.5),
+                0 0 0 2px rgba(0, 255, 200, 0.3);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .playbook-slider::-moz-range-thumb:hover {
+            transform: scale(1.2);
+            box-shadow: 
+                0 6px 16px rgba(0, 0, 0, 0.4),
+                inset 0 1px 2px rgba(255, 255, 255, 0.5),
+                0 0 0 4px rgba(0, 255, 200, 0.4),
+                0 0 20px rgba(0, 255, 200, 0.3);
+        }
+
+        .playbook-slider::-moz-range-thumb:active {
+            cursor: grabbing;
+            transform: scale(1.1);
+        }
+
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2px;
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.35);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .playbook-submit {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            color: #000;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(0, 255, 200, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .playbook-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 255, 200, 0.5);
+        }
+
+        .playbook-submit:active {
+            transform: translateY(0);
+        }
+
+        .trust-footer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8rem;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .playbook-close {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 2.5rem;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: rgba(255, 255, 255, 0.1);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+        }
+
+        .playbook-close:hover {
+            background: var(--primary-color);
+            color: #000;
+            transform: rotate(90deg);
+        }
+
+        .playbook-success {
+            text-align: center;
+            padding: 60px 40px;
+            display: none;
+        }
+
+        .playbook-success.show {
+            display: block;
+        }
+
+        .playbook-success-icon {
+            font-size: 4rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            animation: successPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes successPop {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .playbook-success h3 {
+            font-size: 1.6rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--primary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .playbook-success p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .playbook-popup {
+                max-width: calc(100% - 20px);
+                padding: 30px 25px;
+            }
+
+            .playbook-form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .playbook-phone-grid {
+                grid-template-columns: 140px 1fr;
+            }
+        }
+
+        .language-banner {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(200%);
+            background: rgba(15, 15, 15, 0.98);
+            backdrop-filter: blur(30px);
+            border: 1px solid rgba(0, 255, 200, 0.3);
+            padding: 32px 40px;
+            border-radius: 20px;
+            z-index: 10001;
+            max-width: 950px;
+            width: calc(100% - 40px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(0, 255, 200, 0.15);
+            transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .language-banner.show {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        #mainNav {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            font-weight: 800;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .logo-icon {
+            width: 120px;
+            height: 120px;
+            background-image: url('media/22.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: brightness(1.2) drop-shadow(0 0 20px rgba(0, 255, 200, 0.4));
+            opacity: 1;
+        }
+
+        .logo:hover .logo-icon {
+            transform: scale(1.08);
+            filter: brightness(1.3) drop-shadow(0 0 30px rgba(0, 255, 200, 0.6));
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.3s;
+            white-space: nowrap;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-shrink: 0;
+        }
+
+        .nav-cta, .btn {
+            padding: 14px 32px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            white-space: nowrap;
+        }
+
+        .btn-primary, .nav-cta {
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            color: #000;
+            box-shadow: 0 6px 20px rgba(0, 255, 200, 0.3);
+        }
+
+        .btn-primary:hover, .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 255, 200, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 255, 200, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .floating-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: float linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) translateX(0) scale(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-100px) translateX(100px) scale(1);
+                opacity: 0;
+            }
+        }
+
+        .coming-soon-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: rgba(0, 255, 200, 0.1);
+            border: 1px solid var(--primary-color);
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+            animation: pulse 2s infinite;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+        }
+
+        h1 {
+            font-size: clamp(3rem, 8vw, 6.5rem);
+            font-weight: 900;
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 30px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .currency-amount {
+            display: inline-block;
+            min-width: 200px;
+            text-align: center;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 50px;
+            line-height: 1.8;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: -80px;
+            position: relative;
+            z-index: 20;
+        }
+
+        .stat-card {
+            padding: 50px 30px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(0, 255, 200, 0.05), rgba(48, 209, 88, 0.05));
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-default);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 200, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .stat-card:hover::before {
+            left: 100%;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0, 255, 200, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 80px;
+            letter-spacing: -1px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            padding: 50px 40px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-default);
+            transition: transform 0.3s, border-color 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary-color);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #000;
+            margin-bottom: 30px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .investment-showcase-wrapper {
+            overflow: hidden;
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .investment-showcase {
+            display: flex;
+            gap: 40px;
+            animation: scroll 30s linear infinite;
+            width: max-content;
+        }
+
+        .investment-showcase:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-50%));
+            }
+        }
+
+        .investment-card {
+            min-width: 400px;
+            max-width: 400px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-default);
+            overflow: hidden;
+            transition: transform 0.3s, border-color 0.3s;
+            flex-shrink: 0;
+        }
+
+        .investment-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .investment-image {
+            width: 100%;
+            height: 280px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .investment-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 8px 16px;
+            background: rgba(0, 255, 200, 0.9);
+            color: #000;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .investment-content {
+            padding: 35px;
+        }
+
+        .investment-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .investment-location {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .investment-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .investment-stat {
+            text-align: center;
+        }
+
+        .investment-stat-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .investment-stat-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+            cursor: pointer;
+            font-size: 1.25rem;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        .faq-question:hover {
+            color: var(--primary-color);
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 20px;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+            padding-bottom: 30px;
+        }
+
+        .faq-answer p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .footer {
+            background: #000000;
+            border-top: 1px solid #1A1A1A;
+            padding: 80px 0 40px;
+            margin-top: 120px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .footer p,
+        .footer-about p,
+        .footer-bottom p {
+            color: #D0D0D0 !important;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            margin-bottom: 50px;
+            align-items: start;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-section h4 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+            min-height: 30px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 15px;
+        }
+
+        .footer-section a {
+            color: #C0C0C0;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-about {
+            max-width: 100%;
+        }
+
+        .footer-about .logo {
+            margin-bottom: 20px;
+        }
+
+        .footer-about .logo-icon {
+            width: 80px;
+            height: 80px;
+        }
+
+        .footer-about p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin: 20px 0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 255, 200, 0.1);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            background: var(--primary-color);
+            color: #000;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .regulatory-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .badge {
+            padding: 10px 20px;
+            background: #0A1A18;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 0.75rem;
+            color: #D0D0D0;
+            font-weight: 600;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            overflow-y: auto;
+            padding: 20px 0;
+        }
+
+        .modal.is-visible {
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-default);
+            padding: 60px 50px;
+            max-width: 600px;
+            width: 90%;
+            position: relative;
+            transform: translateY(20px);
+            transition: transform 0.3s;
+            margin: 50px auto;
+        }
+
+        .modal.is-visible .modal-content {
+            transform: translateY(0);
+        }
+
+        .policy-modal-content {
+            max-width: 900px;
+            padding: 50px;
+        }
+
+        .policy-modal-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .policy-modal-content h3 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .policy-modal-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .policy-modal-content ul {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .policy-modal-content li {
+            margin-bottom: 8px;
+        }
+
+        .policy-modal-content strong {
+            color: var(--text-primary);
+        }
+
+        .policy-last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 2.5rem;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: rgba(255, 255, 255, 0.1);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            z-index: 100;
+        }
+
+        .close-button:hover {
+            color: var(--primary-color);
+            background: rgba(0, 255, 200, 0.2);
+            transform: rotate(90deg);
+        }
+
+        .modal-title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .modal-subtitle {
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .waitlist-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .waitlist-form input,
+        .waitlist-form textarea {
+            padding: 16px 20px;
+            background: #1A1A1A;
+            border: 1px solid #3A3A3A;
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+            width: 100%;
+        }
+
+        .waitlist-form input:focus,
+        .waitlist-form textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .waitlist-form textarea {
+            resize: vertical;
+        }
+
+        .waitlist-submit {
+            margin-top: 10px;
+        }
+
+        .success-message {
+            display: none;
+            padding: 15px;
+            background: rgba(0, 255, 200, 0.1);
+            border: 1px solid var(--primary-color);
+            border-radius: 8px;
+            color: var(--primary-color);
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 1024px) {
+            .section {
+                padding: 80px 0;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-container {
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 15px;
+            }
+
+            .nav-actions {
+                flex-direction: row;
+                gap: 12px;
+            }
+
+            .nav-cta {
+                padding: 12px 24px;
+                font-size: 0.8rem;
+            }
+
+            .stats-grid {
+                margin-top: -40px;
+                grid-template-columns: 1fr;
+            }
+
+            .hero-cta-group {
+                flex-direction: column;
+            }
+
+            .hero-cta-group .btn {
+                width: 100%;
+            }
+
+            .investment-card {
+                min-width: 320px;
+                max-width: 320px;
+            }
+
+            .modal-content {
+                padding: 40px 30px;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+
+            .cookie-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cookie-icon {
+                font-size: 2.2rem;
+            }
+
+            .cookie-actions {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .cookie-btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;" onselectstart="return false;" oncopy="return false;">
+    <div id="google_translate_element" style="display: none;"></div>
+    <canvas id="three-js-canvas"></canvas>
+    
+    <div class="floating-particles" id="particles"></div>
+
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <div class="cookie-icon">🍪</div>
+            <div class="cookie-text">
+                <h4>We Value Your Privacy</h4>
+                <p>We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By continuing, you consent to our use of cookies.</p>
+            </div>
+            <div class="cookie-actions">
+                <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accept All</button>
+                <button class="cookie-btn cookie-decline" onclick="declineCookies()">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="language-banner" id="languageBanner">
+        <div class="cookie-content">
+            <div class="cookie-icon">🌐</div>
+            <div class="cookie-text">
+                <h4>Language Preference / تفضيل اللغة</h4>
+                <p id="languageBannerText">Would you like to view this site in your regional language or continue in English?</p>
+            </div>
+            <div class="cookie-actions">
+                <button class="cookie-btn cookie-accept" id="regionalLangBtn" onclick="selectRegionalLanguage()">Loading...</button>
+                <button class="cookie-btn cookie-decline" onclick="selectLanguage('en')">English</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="playbook-popup-overlay" id="playbookOverlay" onclick="closePlaybookPopup()"></div>
+    <div class="playbook-popup" id="playbookPopup">
+        <span class="playbook-close" onclick="closePlaybookPopup()">&times;</span>
+        
+        <div class="playbook-form-content" id="playbookFormContent">
+            <div class="playbook-logo">
+                <div class="logo-icon"></div>
+            </div>
+            
+            <form class="playbook-form" id="playbookForm" onsubmit="handlePlaybookSubmit(event)">
+                <div class="playbook-form-grid">
+                <div class="playbook-form-group">
+                    <label for="playbookFullName">Full Name *</label>
+                    <input type="text" id="playbookFullName" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="playbook-form-group">
+                    <label for="playbookEmail">Email Address *</label>
+                    <input type="email" id="playbookEmail" placeholder="your.email@example.com" required>
+                </div>
+                
+                <div class="playbook-form-group">
+                    <label for="playbookPhone">Phone Number *</label>
+                    <div class="playbook-phone-grid">
+                        <select id="playbookCountryCode" required>
+                        <option value="AE">🇦🇪 United Arab Emirates</option>
+<option value="AF">🇦🇫 Afghanistan</option>
+<option value="AM">🇦🇲 Armenia</option>
+<option value="AZ">🇦🇿 Azerbaijan</option>
+<option value="BD">🇧🇩 Bangladesh</option>
+<option value="BT">🇧🇹 Bhutan</option>
+<option value="BN">🇧🇳 Brunei</option>
+<option value="KH">🇰🇭 Cambodia</option>
+<option value="CN">🇨🇳 China</option>
+<option value="CY">🇨🇾 Cyprus</option>
+<option value="GE">🇬🇪 Georgia</option>
+<option value="IN">🇮🇳 India</option>
+<option value="ID">🇮🇩 Indonesia</option>
+<option value="IR">🇮🇷 Iran</option>
+<option value="IQ">🇮🇶 Iraq</option>
+<option value="IL">🇮🇱 Israel</option>
+<option value="JP">🇯🇵 Japan</option>
+<option value="JO">🇯🇴 Jordan</option>
+<option value="KZ">🇰🇿 Kazakhstan</option>
+<option value="KW">🇰🇼 Kuwait</option>
+<option value="KG">🇰🇬 Kyrgyzstan</option>
+<option value="LA">🇱🇦 Laos</option>
+<option value="LB">🇱🇧 Lebanon</option>
+<option value="MY">🇲🇾 Malaysia</option>
+<option value="MV">🇲🇻 Maldives</option>
+<option value="MN">🇲🇳 Mongolia</option>
+<option value="MM">🇲🇲 Myanmar</option>
+<option value="NP">🇳🇵 Nepal</option>
+<option value="KP">🇰🇵 North Korea</option>
+<option value="OM">🇴🇲 Oman</option>
+<option value="PK">🇵🇰 Pakistan</option>
+<option value="PH">🇵🇭 Philippines</option>
+<option value="QA">🇶🇦 Qatar</option>
+<option value="SA">🇸🇦 Saudi Arabia</option>
+<option value="SG">🇸🇬 Singapore</option>
+<option value="KR">🇰🇷 South Korea</option>
+<option value="LK">🇱🇰 Sri Lanka</option>
+<option value="SY">🇸🇾 Syria</option>
+<option value="TJ">🇹🇯 Tajikistan</option>
+<option value="TH">🇹🇭 Thailand</option>
+<option value="TR">🇹🇷 Turkey</option>
+<option value="TM">🇹🇲 Turkmenistan</option>
+<option value="UZ">🇺🇿 Uzbekistan</option>
+<option value="VN">🇻🇳 Vietnam</option>
+<option value="YE">🇾🇪 Yemen</option>
+<option value="DZ">🇩🇿 Algeria</option>
+<option value="AO">🇦🇴 Angola</option>
+<option value="BJ">🇧🇯 Benin</option>
+<option value="BW">🇧🇼 Botswana</option>
+<option value="BF">🇧🇫 Burkina Faso</option>
+<option value="BI">🇧🇮 Burundi</option>
+<option value="CV">🇨🇻 Cape Verde</option>
+<option value="TD">🇹🇩 Chad</option>
+<option value="KM">🇰🇲 Comoros</option>
+<option value="CD">🇨🇩 Congo (DRC)</option>
+<option value="CG">🇨🇬 Congo (Republic)</option>
+<option value="CI">🇨🇮 Côte d'Ivoire</option>
+<option value="DJ">🇩🇯 Djibouti</option>
+<option value="EG">🇪🇬 Egypt</option>
+<option value="GQ">🇬🇶 Equatorial Guinea</option>
+<option value="ER">🇪🇷 Eritrea</option>
+<option value="ET">🇪🇹 Ethiopia</option>
+<option value="GA">🇬🇦 Gabon</option>
+<option value="GM">🇬🇲 Gambia</option>
+<option value="GH">🇬🇭 Ghana</option>
+<option value="GN">🇬🇳 Guinea</option>
+<option value="GW">🇬🇼 Guinea-Bissau</option>
+<option value="KE">🇰🇪 Kenya</option>
+<option value="LS">🇱🇸 Lesotho</option>
+<option value="LR">🇱🇷 Liberia</option>
+<option value="LY">🇱🇾 Libya</option>
+<option value="MG">🇲🇬 Madagascar</option>
+<option value="MW">🇲🇼 Malawi</option>
+<option value="ML">🇲🇱 Mali</option>
+<option value="MR">🇲🇷 Mauritania</option>
+<option value="MU">🇲🇺 Mauritius</option>
+<option value="MA">🇲🇦 Morocco</option>
+<option value="MZ">🇲🇿 Mozambique</option>
+<option value="NA">🇳🇦 Namibia</option>
+<option value="NE">🇳🇪 Niger</option>
+<option value="NG">🇳🇬 Nigeria</option>
+<option value="RE">🇷🇪 Réunion</option>
+<option value="RW">🇷🇼 Rwanda</option>
+<option value="ST">🇸🇹 São Tomé & Príncipe</option>
+<option value="SN">🇸🇳 Senegal</option>
+<option value="SC">🇸🇨 Seychelles</option>
+<option value="SL">🇸🇱 Sierra Leone</option>
+<option value="SO">🇸🇴 Somalia</option>
+<option value="ZA">🇿🇦 South Africa</option>
+<option value="SS">🇸🇸 South Sudan</option>
+<option value="SD">🇸🇩 Sudan</option>
+<option value="SZ">🇸🇿 Eswatini</option>
+<option value="TZ">🇹🇿 Tanzania</option>
+<option value="TG">🇹🇬 Togo</option>
+<option value="TN">🇹🇳 Tunisia</option>
+<option value="UG">🇺🇬 Uganda</option>
+<option value="ZM">🇿🇲 Zambia</option>
+<option value="ZW">🇿🇼 Zimbabwe</option>
+<option value="AL">🇦🇱 Albania</option>
+<option value="AT">🇦🇹 Austria</option>
+<option value="BY">🇧🇾 Belarus</option>
+<option value="BE">🇧🇪 Belgium</option>
+<option value="BA">🇧🇦 Bosnia & Herzegovina</option>
+<option value="BG">🇧🇬 Bulgaria</option>
+<option value="HR">🇭🇷 Croatia</option>
+<option value="CZ">🇨🇿 Czech Republic</option>
+<option value="DK">🇩🇰 Denmark</option>
+<option value="EE">🇪🇪 Estonia</option>
+<option value="FI">🇫🇮 Finland</option>
+<option value="FR">🇫🇷 France</option>
+<option value="DE">🇩🇪 Germany</option>
+<option value="GR">🇬🇷 Greece</option>
+<option value="HU">🇭🇺 Hungary</option>
+<option value="IS">🇮🇸 Iceland</option>
+<option value="IE">🇮🇪 Ireland</option>
+<option value="IT">🇮🇹 Italy</option>
+<option value="LV">🇱🇻 Latvia</option>
+<option value="LT">🇱🇹 Lithuania</option>
+<option value="LU">🇱🇺 Luxembourg</option>
+<option value="MT">🇲🇹 Malta</option>
+<option value="MD">🇲🇩 Moldova</option>
+<option value="ME">🇲🇪 Montenegro</option>
+<option value="NL">🇳🇱 Netherlands</option>
+<option value="MK">🇲🇰 North Macedonia</option>
+<option value="NO">🇳🇴 Norway</option>
+<option value="PL">🇵🇱 Poland</option>
+<option value="PT">🇵🇹 Portugal</option>
+<option value="RO">🇷🇴 Romania</option>
+<option value="RU">🇷🇺 Russia</option>
+<option value="RS">🇷🇸 Serbia</option>
+<option value="SK">🇸🇰 Slovakia</option>
+<option value="SI">🇸🇮 Slovenia</option>
+<option value="ES">🇪🇸 Spain</option>
+<option value="SE">🇸🇪 Sweden</option>
+<option value="CH">🇨🇭 Switzerland</option>
+<option value="UA">🇺🇦 Ukraine</option>
+<option value="GB">🇬🇧 United Kingdom</option>
+<option value="US">🇺🇸 United States</option>
+<option value="CA">🇨🇦 Canada</option>
+<option value="AR">🇦🇷 Argentina</option>
+<option value="BS">🇧🇸 Bahamas</option>
+<option value="BB">🇧🇧 Barbados</option>
+<option value="BZ">🇧🇿 Belize</option>
+<option value="BO">🇧🇴 Bolivia</option>
+<option value="BR">🇧🇷 Brazil</option>
+<option value="CL">🇨🇱 Chile</option>
+<option value="CO">🇨🇴 Colombia</option>
+<option value="CR">🇨🇷 Costa Rica</option>
+<option value="CU">🇨🇺 Cuba</option>
+<option value="DO">🇩🇴 Dominican Republic</option>
+<option value="EC">🇪🇨 Ecuador</option>
+<option value="SV">🇸🇻 El Salvador</option>
+<option value="GT">🇬🇹 Guatemala</option>
+<option value="HT">🇭🇹 Haiti</option>
+<option value="HN">🇭🇳 Honduras</option>
+<option value="JM">🇯🇲 Jamaica</option>
+<option value="MX">🇲🇽 Mexico</option>
+<option value="NI">🇳🇮 Nicaragua</option>
+<option value="PA">🇵🇦 Panama</option>
+<option value="PY">🇵🇾 Paraguay</option>
+<option value="PE">🇵🇪 Peru</option>
+<option value="PR">🇵🇷 Puerto Rico</option>
+<option value="TT">🇹🇹 Trinidad & Tobago</option>
+<option value="UY">🇺🇾 Uruguay</option>
+<option value="VE">🇻🇪 Venezuela</option>
+<option value="AU">🇦🇺 Australia</option>
+<option value="FJ">🇫🇯 Fiji</option>
+<option value="NZ">🇳🇿 New Zealand</option>
+<option value="PG">🇵🇬 Papua New Guinea</option>
+<option value="WS">🇼🇸 Samoa</option>
+<option value="TO">🇹🇴 Tonga</option>
+<option value="VU">🇻🇺 Vanuatu</option>
+                        </select>
+                        <input type="tel" id="playbookPhone" placeholder="501234567" required>
+                    </div>
+                </div>
+                
+                <div class="playbook-form-group">
+                    <label for="playbookCountry">Country of Residence *</label>
+                    <select id="playbookCountry" required>
+                        <option value="">Select your country</option>
+                       <option value="AE">🇦🇪 United Arab Emirates</option>
+<option value="AF">🇦🇫 Afghanistan</option>
+<option value="AM">🇦🇲 Armenia</option>
+<option value="AZ">🇦🇿 Azerbaijan</option>
+<option value="BD">🇧🇩 Bangladesh</option>
+<option value="BT">🇧🇹 Bhutan</option>
+<option value="BN">🇧🇳 Brunei</option>
+<option value="KH">🇰🇭 Cambodia</option>
+<option value="CN">🇨🇳 China</option>
+<option value="CY">🇨🇾 Cyprus</option>
+<option value="GE">🇬🇪 Georgia</option>
+<option value="IN">🇮🇳 India</option>
+<option value="ID">🇮🇩 Indonesia</option>
+<option value="IR">🇮🇷 Iran</option>
+<option value="IQ">🇮🇶 Iraq</option>
+<option value="IL">🇮🇱 Israel</option>
+<option value="JP">🇯🇵 Japan</option>
+<option value="JO">🇯🇴 Jordan</option>
+<option value="KZ">🇰🇿 Kazakhstan</option>
+<option value="KW">🇰🇼 Kuwait</option>
+<option value="KG">🇰🇬 Kyrgyzstan</option>
+<option value="LA">🇱🇦 Laos</option>
+<option value="LB">🇱🇧 Lebanon</option>
+<option value="MY">🇲🇾 Malaysia</option>
+<option value="MV">🇲🇻 Maldives</option>
+<option value="MN">🇲🇳 Mongolia</option>
+<option value="MM">🇲🇲 Myanmar</option>
+<option value="NP">🇳🇵 Nepal</option>
+<option value="KP">🇰🇵 North Korea</option>
+<option value="OM">🇴🇲 Oman</option>
+<option value="PK">🇵🇰 Pakistan</option>
+<option value="PH">🇵🇭 Philippines</option>
+<option value="QA">🇶🇦 Qatar</option>
+<option value="SA">🇸🇦 Saudi Arabia</option>
+<option value="SG">🇸🇬 Singapore</option>
+<option value="KR">🇰🇷 South Korea</option>
+<option value="LK">🇱🇰 Sri Lanka</option>
+<option value="SY">🇸🇾 Syria</option>
+<option value="TJ">🇹🇯 Tajikistan</option>
+<option value="TH">🇹🇭 Thailand</option>
+<option value="TR">🇹🇷 Turkey</option>
+<option value="TM">🇹🇲 Turkmenistan</option>
+<option value="UZ">🇺🇿 Uzbekistan</option>
+<option value="VN">🇻🇳 Vietnam</option>
+<option value="YE">🇾🇪 Yemen</option>
+<option value="DZ">🇩🇿 Algeria</option>
+<option value="AO">🇦🇴 Angola</option>
+<option value="BJ">🇧🇯 Benin</option>
+<option value="BW">🇧🇼 Botswana</option>
+<option value="BF">🇧🇫 Burkina Faso</option>
+<option value="BI">🇧🇮 Burundi</option>
+<option value="CV">🇨🇻 Cape Verde</option>
+<option value="TD">🇹🇩 Chad</option>
+<option value="KM">🇰🇲 Comoros</option>
+<option value="CD">🇨🇩 Congo (DRC)</option>
+<option value="CG">🇨🇬 Congo (Republic)</option>
+<option value="CI">🇨🇮 Côte d'Ivoire</option>
+<option value="DJ">🇩🇯 Djibouti</option>
+<option value="EG">🇪🇬 Egypt</option>
+<option value="GQ">🇬🇶 Equatorial Guinea</option>
+<option value="ER">🇪🇷 Eritrea</option>
+<option value="ET">🇪🇹 Ethiopia</option>
+<option value="GA">🇬🇦 Gabon</option>
+<option value="GM">🇬🇲 Gambia</option>
+<option value="GH">🇬🇭 Ghana</option>
+<option value="GN">🇬🇳 Guinea</option>
+<option value="GW">🇬🇼 Guinea-Bissau</option>
+<option value="KE">🇰🇪 Kenya</option>
+<option value="LS">🇱🇸 Lesotho</option>
+<option value="LR">🇱🇷 Liberia</option>
+<option value="LY">🇱🇾 Libya</option>
+<option value="MG">🇲🇬 Madagascar</option>
+<option value="MW">🇲🇼 Malawi</option>
+<option value="ML">🇲🇱 Mali</option>
+<option value="MR">🇲🇷 Mauritania</option>
+<option value="MU">🇲🇺 Mauritius</option>
+<option value="MA">🇲🇦 Morocco</option>
+<option value="MZ">🇲🇿 Mozambique</option>
+<option value="NA">🇳🇦 Namibia</option>
+<option value="NE">🇳🇪 Niger</option>
+<option value="NG">🇳🇬 Nigeria</option>
+<option value="RE">🇷🇪 Réunion</option>
+<option value="RW">🇷🇼 Rwanda</option>
+<option value="ST">🇸🇹 São Tomé & Príncipe</option>
+<option value="SN">🇸🇳 Senegal</option>
+<option value="SC">🇸🇨 Seychelles</option>
+<option value="SL">🇸🇱 Sierra Leone</option>
+<option value="SO">🇸🇴 Somalia</option>
+<option value="ZA">🇿🇦 South Africa</option>
+<option value="SS">🇸🇸 South Sudan</option>
+<option value="SD">🇸🇩 Sudan</option>
+<option value="SZ">🇸🇿 Eswatini</option>
+<option value="TZ">🇹🇿 Tanzania</option>
+<option value="TG">🇹🇬 Togo</option>
+<option value="TN">🇹🇳 Tunisia</option>
+<option value="UG">🇺🇬 Uganda</option>
+<option value="ZM">🇿🇲 Zambia</option>
+<option value="ZW">🇿🇼 Zimbabwe</option>
+<option value="AL">🇦🇱 Albania</option>
+<option value="AT">🇦🇹 Austria</option>
+<option value="BY">🇧🇾 Belarus</option>
+<option value="BE">🇧🇪 Belgium</option>
+<option value="BA">🇧🇦 Bosnia & Herzegovina</option>
+<option value="BG">🇧🇬 Bulgaria</option>
+<option value="HR">🇭🇷 Croatia</option>
+<option value="CZ">🇨🇿 Czech Republic</option>
+<option value="DK">🇩🇰 Denmark</option>
+<option value="EE">🇪🇪 Estonia</option>
+<option value="FI">🇫🇮 Finland</option>
+<option value="FR">🇫🇷 France</option>
+<option value="DE">🇩🇪 Germany</option>
+<option value="GR">🇬🇷 Greece</option>
+<option value="HU">🇭🇺 Hungary</option>
+<option value="IS">🇮🇸 Iceland</option>
+<option value="IE">🇮🇪 Ireland</option>
+<option value="IT">🇮🇹 Italy</option>
+<option value="LV">🇱🇻 Latvia</option>
+<option value="LT">🇱🇹 Lithuania</option>
+<option value="LU">🇱🇺 Luxembourg</option>
+<option value="MT">🇲🇹 Malta</option>
+<option value="MD">🇲🇩 Moldova</option>
+<option value="ME">🇲🇪 Montenegro</option>
+<option value="NL">🇳🇱 Netherlands</option>
+<option value="MK">🇲🇰 North Macedonia</option>
+<option value="NO">🇳🇴 Norway</option>
+<option value="PL">🇵🇱 Poland</option>
+<option value="PT">🇵🇹 Portugal</option>
+<option value="RO">🇷🇴 Romania</option>
+<option value="RU">🇷🇺 Russia</option>
+<option value="RS">🇷🇸 Serbia</option>
+<option value="SK">🇸🇰 Slovakia</option>
+<option value="SI">🇸🇮 Slovenia</option>
+<option value="ES">🇪🇸 Spain</option>
+<option value="SE">🇸🇪 Sweden</option>
+<option value="CH">🇨🇭 Switzerland</option>
+<option value="UA">🇺🇦 Ukraine</option>
+<option value="GB">🇬🇧 United Kingdom</option>
+<option value="US">🇺🇸 United States</option>
+<option value="CA">🇨🇦 Canada</option>
+<option value="AR">🇦🇷 Argentina</option>
+<option value="BS">🇧🇸 Bahamas</option>
+<option value="BB">🇧🇧 Barbados</option>
+<option value="BZ">🇧🇿 Belize</option>
+<option value="BO">🇧🇴 Bolivia</option>
+<option value="BR">🇧🇷 Brazil</option>
+<option value="CL">🇨🇱 Chile</option>
+<option value="CO">🇨🇴 Colombia</option>
+<option value="CR">🇨🇷 Costa Rica</option>
+<option value="CU">🇨🇺 Cuba</option>
+<option value="DO">🇩🇴 Dominican Republic</option>
+<option value="EC">🇪🇨 Ecuador</option>
+<option value="SV">🇸🇻 El Salvador</option>
+<option value="GT">🇬🇹 Guatemala</option>
+<option value="HT">🇭🇹 Haiti</option>
+<option value="HN">🇭🇳 Honduras</option>
+<option value="JM">🇯🇲 Jamaica</option>
+<option value="MX">🇲🇽 Mexico</option>
+<option value="NI">🇳🇮 Nicaragua</option>
+<option value="PA">🇵🇦 Panama</option>
+<option value="PY">🇵🇾 Paraguay</option>
+<option value="PE">🇵🇪 Peru</option>
+<option value="PR">🇵🇷 Puerto Rico</option>
+<option value="TT">🇹🇹 Trinidad & Tobago</option>
+<option value="UY">🇺🇾 Uruguay</option>
+<option value="VE">🇻🇪 Venezuela</option>
+<option value="AU">🇦🇺 Australia</option>
+<option value="FJ">🇫🇯 Fiji</option>
+<option value="NZ">🇳🇿 New Zealand</option>
+<option value="PG">🇵🇬 Papua New Guinea</option>
+<option value="WS">🇼🇸 Samoa</option>
+<option value="TO">🇹🇴 Tonga</option>
+<option value="VU">🇻🇺 Vanuatu</option>
+                    </select>
+                </div>
+                
+                <div class="playbook-form-group full-width">
+                    <label>Participation Range *</label>
+                    <div class="slider-container">
+                        <div class="slider-header">
+                            <span class="slider-currency">USD</span>
+                            <div class="slider-value" id="sliderValue">$2,500</div>
+                        </div>
+                        <div class="slider-wrapper">
+                            <div class="slider-track-bg"></div>
+                            <div class="slider-start-point"></div>
+                            <div class="slider-track-fill" id="sliderTrackFill"></div>
+                            <input type="range" min="0" max="195" value="0" step="1" class="playbook-slider" id="playbookSlider" oninput="updateSliderValue()">
+                        </div>
+                        <div class="slider-labels">
+                            <span>$2,500</span>
+                            <span>$100,000</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="playbook-form-group full-width">
+                    <label for="playbookAssetInterest">Asset Class Interest *</label>
+                    <select id="playbookAssetInterest" required>
+                        <option value="">Select your interest</option>
+                        <option value="Real Estate">Real Estate</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Diamonds">Diamonds</option>
+                        <option value="Rubies">Rubies</option>
+                        <option value="All">All Asset Classes</option>
+                    </select>
+                </div>
+                </div>
+                
+                <button type="submit" class="playbook-submit">
+                    <span>Get The Playbook</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                
+                <div class="trust-footer">
+                    Click Capital is licensed under Sharjah Innovation and Technology Park
+                </div>
+            </form>
+        </div>
+        
+        <div class="playbook-success" id="playbookSuccess">
+            <div class="playbook-success-icon">✓</div>
+            <h3>Your Opportunity Guide Is Ready</h3>
+            <p>Download starting now. Our team may reach out to discuss available opportunities and answer your questions.</p>
+        </div>
+    </div>
+
+    <nav id="mainNav">
+        <div class="nav-container container">
+            <div class="logo" onclick="scrollToSection('home')">
+                <div class="logo-icon"></div>
+            </div>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">How It Works</a>
+                <a href="#investments" class="nav-link">Opportunities</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-cta" onclick="openModal()">Join Waitlist</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="coming-soon-badge">
+                    <div class="pulse-dot"></div>
+                    LAUNCHING Q1 2026 • EARLY ACCESS NOW OPEN
+                </div>
+                <h1>
+                    <span class="gradient-text">Fractional Luxury Opportunities</span><br>
+                    <span>Starting From <span class="currency-amount" id="currencyAmount">$2,500</span></span>
+                </h1>
+                <p class="hero-description">
+                    Access institutional-grade real estate and rare earth commodities through fractional ownership. Explore opportunities with complete transparency and professional management.
+                </p>
+                <div class="hero-cta-group">
+                    <button class="btn btn-primary" onclick="openModal()">
+                        <span>Join Waitlist</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('features')">
+                        <span>Learn More</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="2500">$0</div>
+                        <div class="stat-label">Minimum Entry (USD)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="50">0+</div>
+                        <div class="stat-label">Global Countries Supported</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Major Currencies Accepted</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Platform Availability</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="features">
+            <div class="container">
+                <h2>Diversified <span class="gradient-text">Opportunities</span></h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Real Estate</h3>
+                        <p>Access premium international properties with fractional ownership. Benefit from rental income and capital appreciation in the world's most dynamic real estate markets across multiple continents.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Diamonds</h3>
+                        <p>Invest in certified diamonds with transparent pricing. Historically stable store of value with strong global demand and exceptional appreciation potential.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Gold</h3>
+                        <p>Physical gold holdings with full transparency. Classic inflation hedge and portfolio diversifier trusted by investors worldwide for centuries.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-gem" style="color: #ff0000;"></i>
+                        </div>
+                        <h3>Rubies</h3>
+                        <p>Rare gemstones with exceptional value appreciation. Limited supply and growing demand from collectors drive consistent long-term returns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="investments">
+            <div class="container">
+                <h2>Featured Diverse <span class="gradient-text">Opportunities</span></h2>
+            </div>
+            <div class="investment-showcase-wrapper">
+                <div class="investment-showcase" id="investmentScroll">
+                    <div class="investment-card">
+                        <div class="investment-image royal-bay-bg">
+                            <div class="investment-badge">Live</div>
+                        </div>
+                        <div class="investment-content">
+                            <h3>Royal Bay Palm Jumeirah</h3>
+                            <div class="investment-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Palm Jumeirah, Dubai, UAE
+                            </div>
+                            <p>Ultra-luxury waterfront residence on the iconic Palm Jumeirah with private beach access and world-class amenities.</p>
+                            <div class="investment-stats">
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">8.5%</span>
+                                    <span class="investment-stat-label">Rental Yield</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$2,500</span>
+                                    <span class="investment-stat-label">Min. Investment</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$12.5M</span>
+                                    <span class="investment-stat-label">Property Value</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">73%</span>
+                                    <span class="investment-stat-label">Funded</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="investment-image danube-breez-bg">
+                            <div class="investment-badge">Live</div>
+                        </div>
+                        <div class="investment-content">
+                            <h3>Danube Breez Studio</h3>
+                            <div class="investment-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Dubai, UAE
+                            </div>
+                            <p>Modern studio apartments with premium finishes and excellent connectivity to Dubai's business districts.</p>
+                            <div class="investment-stats">
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">9.2%</span>
+                                    <span class="investment-stat-label">Rental Yield</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$2,500</span>
+                                    <span class="investment-stat-label">Min. Investment</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$385K</span>
+                                    <span class="investment-stat-label">Property Value</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">85%</span>
+                                    <span class="investment-stat-label">Funded</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="investment-image azizi-mina-bg">
+                            <div class="investment-badge">Coming Soon</div>
+                        </div>
+                        <div class="investment-content">
+                            <h3>Azizi Mina Palm Jumeirah</h3>
+                            <div class="investment-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Palm Jumeirah, Dubai, UAE
+                            </div>
+                            <p>Contemporary waterfront living with panoramic views of the Arabian Gulf and Dubai skyline.</p>
+                            <div class="investment-stats">
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">7.8%</span>
+                                    <span class="investment-stat-label">Rental Yield</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$2,500</span>
+                                    <span class="investment-stat-label">Min. Investment</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$8.2M</span>
+                                    <span class="investment-stat-label">Property Value</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">Q1 2026</span>
+                                    <span class="investment-stat-label">Launch Date</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="investment-image damac-islands-bg">
+                            <div class="investment-badge">Coming Soon</div>
+                        </div>
+                        <div class="investment-content">
+                            <h3>DAMAC Islands Villa</h3>
+                            <div class="investment-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                DAMAC Islands, Dubai, UAE
+                            </div>
+                            <p>Exclusive island living with private waterfront access and resort-style amenities in a gated community.</p>
+                            <div class="investment-stats">
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">6.5%</span>
+                                    <span class="investment-stat-label">Rental Yield</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$2,500</span>
+                                    <span class="investment-stat-label">Min. Investment</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$18.5M</span>
+                                    <span class="investment-stat-label">Property Value</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">Q2 2026</span>
+                                    <span class="investment-stat-label">Launch Date</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="investment-image waha-living-bg">
+                            <div class="investment-badge">Coming Soon</div>
+                        </div>
+                        <div class="investment-content">
+                            <h3>Waha Living</h3>
+                            <div class="investment-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Dubai, UAE
+                            </div>
+                            <p>Sustainable community living with green spaces, modern architecture, and family-friendly amenities.</p>
+                            <div class="investment-stats">
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">8.8%</span>
+                                    <span class="investment-stat-label">Rental Yield</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$2,500</span>
+                                    <span class="investment-stat-label">Min. Investment</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$2.8M</span>
+                                    <span class="investment-stat-label">Property Value</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">Q2 2026</span>
+                                    <span class="investment-stat-label">Launch Date</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="investment-image royal-bay-bg">
+                            <div class="investment-badge">Live</div>
+                        </div>
+                        <div class="investment-content">
+                            <h3>Royal Bay Palm Jumeirah</h3>
+                            <div class="investment-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Palm Jumeirah, Dubai, UAE
+                            </div>
+                            <p>Ultra-luxury waterfront residence on the iconic Palm Jumeirah with private beach access and world-class amenities.</p>
+                            <div class="investment-stats">
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">8.5%</span>
+                                    <span class="investment-stat-label">Rental Yield</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$2,500</span>
+                                    <span class="investment-stat-label">Min. Investment</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$12.5M</span>
+                                    <span class="investment-stat-label">Property Value</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">73%</span>
+                                    <span class="investment-stat-label">Funded</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="investment-image danube-breez-bg">
+                            <div class="investment-badge">Live</div>
+                        </div>
+                        <div class="investment-content">
+                            <h3>Danube Breez Studio</h3>
+                            <div class="investment-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Dubai, UAE
+                            </div>
+                            <p>Modern studio apartments with premium finishes and excellent connectivity to Dubai's business districts.</p>
+                            <div class="investment-stats">
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">9.2%</span>
+                                    <span class="investment-stat-label">Rental Yield</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$2,500</span>
+                                    <span class="investment-stat-label">Min. Investment</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$385K</span>
+                                    <span class="investment-stat-label">Property Value</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">85%</span>
+                                    <span class="investment-stat-label">Funded</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="investment-image azizi-mina-bg">
+                            <div class="investment-badge">Coming Soon</div>
+                        </div>
+                        <div class="investment-content">
+                            <h3>Azizi Mina Palm Jumeirah</h3>
+                            <div class="investment-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Palm Jumeirah, Dubai, UAE
+                            </div>
+                            <p>Contemporary waterfront living with panoramic views of the Arabian Gulf and Dubai skyline.</p>
+                            <div class="investment-stats">
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">7.8%</span>
+                                    <span class="investment-stat-label">Rental Yield</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$2,500</span>
+                                    <span class="investment-stat-label">Min. Investment</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$8.2M</span>
+                                    <span class="investment-stat-label">Property Value</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">Q1 2026</span>
+                                    <span class="investment-stat-label">Launch Date</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="investment-image damac-islands-bg">
+                            <div class="investment-badge">Coming Soon</div>
+                        </div>
+                        <div class="investment-content">
+                            <h3>DAMAC Islands Villa</h3>
+                            <div class="investment-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                DAMAC Islands, Dubai, UAE
+                            </div>
+                            <p>Exclusive island living with private waterfront access and resort-style amenities in a gated community.</p>
+                            <div class="investment-stats">
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">6.5%</span>
+                                    <span class="investment-stat-label">Rental Yield</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$2,500</span>
+                                    <span class="investment-stat-label">Min. Investment</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$18.5M</span>
+                                    <span class="investment-stat-label">Property Value</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">Q2 2026</span>
+                                    <span class="investment-stat-label">Launch Date</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="investment-card">
+                        <div class="investment-image waha-living-bg">
+                            <div class="investment-badge">Coming Soon</div>
+                        </div>
+                        <div class="investment-content">
+                            <h3>Waha Living</h3>
+                            <div class="investment-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Dubai, UAE
+                            </div>
+                            <p>Sustainable community living with green spaces, modern architecture, and family-friendly amenities.</p>
+                            <div class="investment-stats">
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">8.8%</span>
+                                    <span class="investment-stat-label">Rental Yield</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$2,500</span>
+                                    <span class="investment-stat-label">Min. Investment</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">$2.8M</span>
+                                    <span class="investment-stat-label">Property Value</span>
+                                </div>
+                                <div class="investment-stat">
+                                    <span class="investment-stat-value">Q2 2026</span>
+                                    <span class="investment-stat-label">Launch Date</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" id="faq">
+            <div class="container">
+                <h2>Platform <span class="gradient-text">Questions</span></h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How does Click Capital work?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click Capital is a digital platform that enables fractional ownership of premium assets including real estate and rare commodities. Simply create an account, complete your KYC verification for security compliance, browse our curated collection of properties and commodities, select opportunities that interest you starting from as little as AED 2,500, and track everything through your personal dashboard. All transactions are processed digitally with complete transparency, giving you 24/7 access to manage your portfolio from anywhere in the world.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What makes Click Capital different?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click Capital revolutionizes access to premium assets through several key differentiators: We offer fractional ownership starting from just AED 2,500, making luxury real estate and rare commodities accessible to everyone. Our platform provides 24/7 digital access with instant portfolio tracking. We feature diversified opportunities across real estate, gold, diamonds, and rubies. Every asset undergoes rigorous verification with complete documentation transparency. Our secondary marketplace provides liquidity options unavailable in traditional ownership. All properties are professionally managed by expert teams, and our technology stack ensures bank-grade security with real-time updates.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            When does the platform launch?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click Capital is scheduled to launch in Q1 2026. Join our waitlist today to secure exclusive early access before the public launch. Waitlist members will receive priority access to our inaugural property offerings, advance platform tutorials, and founder member benefits. We'll keep you updated throughout our development process and notify you immediately when the platform goes live.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What is fractional ownership?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Fractional ownership is a modern approach that allows multiple participants to collectively own shares of a single high-value asset. Each participant owns a specific percentage of the property or commodity, represented by secure digital tokens on our platform. This innovative model enables you to access premium properties worth millions of dollars or rare commodities with a fraction of the capital traditionally required. You receive proportional benefits including rental income distributions from properties and participation in potential value appreciation. It's like owning a piece of a luxury property or precious commodity without needing to purchase it entirely yourself.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How are benefits distributed?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For real estate opportunities, rental income is collected from tenants by professional property management teams and distributed to owners on a quarterly basis, proportional to your ownership percentage. For commodities like gold, diamonds, and rubies, value changes are reflected in real-time on your dashboard based on market conditions. All distributions are processed automatically through the platform with complete transparency. You can view detailed reporting showing exactly where distributions come from, when they were processed, and your proportional share. The entire process is digital, eliminating delays associated with traditional real estate ownership.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What is the minimum participation amount?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click Capital makes premium opportunities accessible with a minimum participation starting at $2,500 USD for most offerings. This entry point allows you to start building a diversified portfolio of luxury real estate and rare commodities. Different properties and commodities may have varying minimums based on their total value and ownership structure, but we're committed to maintaining accessible entry points. This democratized access allows participants to own fractions of properties and assets that would typically require hundreds of thousands or millions of dollars to purchase outright.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How secure is the platform?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Security is our highest priority at every level. All real estate properties undergo comprehensive due diligence including legal verification, title searches, and market analysis before listing. Physical commodities (gold, diamonds, rubies) are certified by international standards (GIA for diamonds, LBMA for gold) and stored in secure, insured vaults in the UAE. Our digital infrastructure uses bank-grade encryption to protect your data and transactions. We implement multi-factor authentication, secure wallet technology, and regular security audits. Additionally, we're working closely with regulatory bodies in the UAE and KSA to ensure full compliance with all financial regulations, providing you with peace of mind that your ownership is legitimate and protected.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Can I sell my fractional ownership?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! One of Click Capital's key advantages is our integrated secondary marketplace. Unlike traditional real estate which can take months to sell, you can list your fractional ownership tokens on our marketplace where other verified platform users can purchase them. This provides significantly more liquidity and flexibility compared to conventional property ownership. The marketplace operates 24/7, allowing you to list your holdings whenever you choose. While liquidity depends on market demand and interest in specific properties or commodities, this system eliminates the lengthy processes, agent commissions, and paperwork typically associated with selling real estate or physical commodities.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How are properties selected and managed?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our expert team conducts rigorous due diligence on every potential property opportunity. We evaluate multiple factors including prime location desirability, current market trends and growth projections, rental demand and income potential, property condition and maintenance requirements, legal title clarity and documentation, and long-term appreciation prospects. Only properties that meet our strict criteria are listed on the platform. Once acquired, properties are managed by professional property management companies with proven track records. These teams handle all aspects including tenant screening and relations, regular maintenance and repairs, rent collection and financial reporting, legal compliance, and emergency response. You receive detailed monthly reports showing property performance, occupancy rates, maintenance activities, and financial distributions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What about commodity authentication?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>All commodities on Click Capital undergo strict authentication and certification processes. Gold must meet LBMA (London Bullion Market Association) standards for purity and be 99.99% pure. Diamonds are certified by GIA (Gemological Institute of America) with detailed reports on cut, clarity, color, and carat weight. Rubies are authenticated by certified gemologists and come with complete provenance documentation. All physical commodities are stored in secure, climate-controlled vaults in the UAE with comprehensive insurance coverage. You can view certification documents and storage details for each commodity directly through your dashboard, ensuring complete transparency and peace of mind about the authenticity and security of your holdings.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Is Click Capital regulated?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click Capital is registered and operates from Sharjah Innovation and Technology Park in the United Arab Emirates. We are actively working with regulatory authorities including the Dubai Financial Innovation Centre (DFIC) in the UAE and the Capital Market Authority (CMA) in Saudi Arabia. Our applications for regulatory approval are currently pending, and we are committed to full compliance with all applicable regulations. We work closely with legal advisors to ensure our platform meets the highest standards of regulatory compliance, consumer protection, and financial transparency. The platform will only launch for public access after receiving appropriate regulatory approvals, ensuring you participate through a fully compliant and regulated platform.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How liquid are my holdings?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Traditional real estate ownership can take months or even years to liquidate, involving lengthy negotiations, paperwork, and high transaction costs. Click Capital transforms this through our secondary marketplace. You can list your fractional ownership tokens at any time, and other platform users can purchase them, typically completing transactions within days rather than months. Liquidity varies based on factors like property desirability, current market conditions, and overall platform demand. Popular properties in prime locations generally attract more buyer interest. The marketplace operates continuously, giving you flexibility to exit positions when needed. This represents a fundamental advantage over traditional real estate and commodity ownership, where selling can be complex and time-consuming.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Who can use Click Capital?
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Click Capital welcomes participants from most countries worldwide, subject to local regulations and compliance requirements. During registration, all users complete a KYC (Know Your Customer) verification process to comply with international anti-money laundering standards and financial regulations. This typically involves providing identification documents, proof of address, and basic background information. The process is entirely digital and usually completes within 24-48 hours. Some jurisdictions may have specific restrictions or additional requirements, which we'll clearly communicate during onboarding. Our goal is to make premium asset ownership accessible globally while maintaining the highest standards of regulatory compliance and user security. If you're unsure about your eligibility, our support team can provide guidance based on your location.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section footer-about">
+                    <div class="logo">
+                        <div class="logo-icon"></div>
+                    </div>
+                    <p>Democratizing access to premium tangible assets through fractional ownership. Building the future of alternative investments in the Middle East.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/clickcapital.ae/?igsh=dDMyZ284ZzdpZm13" class="social-link" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Click-Capital/61572828133149/?sk=about" class="social-link" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/ClickCapital_AE" class="social-link" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@clickcapital.ae" class="social-link" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#features"><i class="fas fa-chevron-right"></i> Asset Classes</a></li>
+                        <li><a href="#investments"><i class="fas fa-chevron-right"></i> Properties</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#" onclick="openModal(); return false;"><i class="fas fa-chevron-right"></i> Join Waitlist</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" onclick="openPolicyModal('terms'); return false;"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                        <li><a href="#" onclick="openPolicyModal('privacy'); return false;"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="#" onclick="openPolicyModal('risk'); return false;"><i class="fas fa-chevron-right"></i> Risk Disclosure</a></li>
+                        <li><a href="#" onclick="openPolicyModal('cookie'); return false;"><i class="fas fa-chevron-right"></i> Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="media/clickcap" target="_blank">Our Play Book</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="app-store-badges" style="margin-bottom: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="#" style="opacity: 0.9; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">
+                        <img src="media/Pre-order_on_the_App_Store_Badge_US-UK_RGB_wht_121217.svg" alt="Pre-order on the App Store" style="height: 50px;">
+                    </a>
+                    <a href="#" style="opacity: 0.9; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">
+                        <img src="media/PreRegisterOnGooglePlay_Badge_Web_color_english.png.png" alt="Pre-register on Google Play" style="height: 50px;">
+                    </a>
+                </div>
+                
+                <p style="margin-top: 30px;">
+                    <strong>Click Capital</strong> | Licensed By Sharjah Innovation and Technology Park, Sharjah, UAE<br>
+                    Also registered in Kingdom of Saudi Arabia
+                </p>
+                <p>
+                    <strong>Risk Warning:</strong> Real estate investments carry risks including market volatility, property value fluctuations, and potential loss of capital. Past performance does not guarantee future results. Investments are not FDIC insured and may lose value.
+                </p>
+                <p>© 2024 Click Capital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="waitlistModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">×</span>
+            <h2 class="gradient-text modal-title">Join Early Access</h2>
+            <p class="modal-subtitle">Be among the first to access premium diversified opportunities in real estate and precious commodities through our platform. Early adopters receive priority allocation and exclusive benefits, regular newsletter with the latest updates and opportunities.</p>
+            <div id="successMessage" class="success-message">
+                ✓ Thank you! You've been added to our waitlist.
+            </div>
+            <form class="waitlist-form" id="waitlistForm" onsubmit="handleSubmit(event)">
+                <div style="margin-bottom: 20px;">
+                    <label for="fullName" style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-primary);">Full Name *</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <label for="email" style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-primary);">Email Address *</label>
+                    <input type="email" id="email" placeholder="your.email@example.com" required>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <label for="phone" style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-primary);">Phone Number *</label>
+                    <div style="display: grid; grid-template-columns: 180px 1fr; gap: 10px;">
+                        <select id="countryCode" required style="padding: 16px 12px; background: #1A1A1A; border: 1px solid #3A3A3A; border-radius: 8px; color: #FFFFFF; font-family: 'Inter', sans-serif; font-size: 1rem;">
+                    
+<option value="+971">🇦🇪 UAE +971</option>
+<option value="+93">🇦🇫 Afghanistan +93</option>
+<option value="+374">🇦🇲 Armenia +374</option>
+<option value="+994">🇦🇿 Azerbaijan +994</option>
+<option value="+880">🇧🇩 Bangladesh +880</option>
+<option value="+975">🇧🇹 Bhutan +975</option>
+<option value="+673">🇧🇳 Brunei +673</option>
+<option value="+855">🇰🇭 Cambodia +855</option>
+<option value="+86">🇨🇳 China +86</option>
+<option value="+357">🇨🇾 Cyprus +357</option>
+<option value="+995">🇬🇪 Georgia +995</option>
+<option value="+91">🇮🇳 India +91</option>
+<option value="+62">🇮🇩 Indonesia +62</option>
+<option value="+98">🇮🇷 Iran +98</option>
+<option value="+964">🇮🇶 Iraq +964</option>
+<option value="+972">🇮🇱 Israel +972</option>
+<option value="+81">🇯🇵 Japan +81</option>
+<option value="+962">🇯🇴 Jordan +962</option>
+<option value="+7">🇰🇿 Kazakhstan +7</option>
+<option value="+965">🇰🇼 Kuwait +965</option>
+<option value="+996">🇰🇬 Kyrgyzstan +996</option>
+<option value="+856">🇱🇦 Laos +856</option>
+<option value="+961">🇱🇧 Lebanon +961</option>
+<option value="+60">🇲🇾 Malaysia +60</option>
+<option value="+960">🇲🇻 Maldives +960</option>
+<option value="+976">🇲🇳 Mongolia +976</option>
+<option value="+95">🇲🇲 Myanmar +95</option>
+<option value="+977">🇳🇵 Nepal +977</option>
+<option value="+850">🇰🇵 North Korea +850</option>
+<option value="+968">🇴🇲 Oman +968</option>
+<option value="+92">🇵🇰 Pakistan +92</option>
+<option value="+63">🇵🇭 Philippines +63</option>
+<option value="+974">🇶🇦 Qatar +974</option>
+<option value="+966">🇸🇦 Saudi Arabia +966</option>
+<option value="+65">🇸🇬 Singapore +65</option>
+<option value="+82">🇰🇷 South Korea +82</option>
+<option value="+94">🇱🇰 Sri Lanka +94</option>
+<option value="+963">🇸🇾 Syria +963</option>
+<option value="+992">🇹🇯 Tajikistan +992</option>
+<option value="+66">🇹🇭 Thailand +66</option>
+<option value="+90">🇹🇷 Turkey +90</option>
+<option value="+993">🇹🇲 Turkmenistan +993</option>
+<option value="+998">🇺🇿 Uzbekistan +998</option>
+<option value="+84">🇻🇳 Vietnam +84</option>
+<option value="+967">🇾🇪 Yemen +967</option>
+<option value="+213">🇩🇿 Algeria +213</option>
+<option value="+244">🇦🇴 Angola +244</option>
+<option value="+229">🇧🇯 Benin +229</option>
+<option value="+267">🇧🇼 Botswana +267</option>
+<option value="+226">🇧🇫 Burkina Faso +226</option>
+<option value="+257">🇧🇮 Burundi +257</option>
+<option value="+238">🇨🇻 Cape Verde +238</option>
+<option value="+235">🇹🇩 Chad +235</option>
+<option value="+269">🇰🇲 Comoros +269</option>
+<option value="+243">🇨🇩 Congo (DRC) +243</option>
+<option value="+242">🇨🇬 Congo (Republic) +242</option>
+<option value="+225">🇨🇮 Côte d'Ivoire +225</option>
+<option value="+253">🇩🇯 Djibouti +253</option>
+<option value="+20">🇪🇬 Egypt +20</option>
+<option value="+240">🇬🇶 Equatorial Guinea +240</option>
+<option value="+291">🇪🇷 Eritrea +291</option>
+<option value="+251">🇪🇹 Ethiopia +251</option>
+<option value="+241">🇬🇦 Gabon +241</option>
+<option value="+220">🇬🇲 Gambia +220</option>
+<option value="+233">🇬🇭 Ghana +233</option>
+<option value="+224">🇬🇳 Guinea +224</option>
+<option value="+245">🇬🇼 Guinea-Bissau +245</option>
+<option value="+254">🇰🇪 Kenya +254</option>
+<option value="+266">🇱🇸 Lesotho +266</option>
+<option value="+231">🇱🇷 Liberia +231</option>
+<option value="+218">🇱🇾 Libya +218</option>
+<option value="+261">🇲🇬 Madagascar +261</option>
+<option value="+265">🇲🇼 Malawi +265</option>
+<option value="+223">🇲🇱 Mali +223</option>
+<option value="+222">🇲🇷 Mauritania +222</option>
+<option value="+230">🇲🇺 Mauritius +230</option>
+<option value="+212">🇲🇦 Morocco +212</option>
+<option value="+258">🇲🇿 Mozambique +258</option>
+<option value="+264">🇳🇦 Namibia +264</option>
+<option value="+227">🇳🇪 Niger +227</option>
+<option value="+234">🇳🇬 Nigeria +234</option>
+<option value="+262">🇷🇪 Réunion +262</option>
+<option value="+250">🇷🇼 Rwanda +250</option>
+<option value="+239">🇸🇹 São Tomé & Príncipe +239</option>
+<option value="+221">🇸🇳 Senegal +221</option>
+<option value="+248">🇸🇨 Seychelles +248</option>
+<option value="+232">🇸🇱 Sierra Leone +232</option>
+<option value="+252">🇸🇴 Somalia +252</option>
+<option value="+27">🇿🇦 South Africa +27</option>
+<option value="+211">🇸🇸 South Sudan +211</option>
+<option value="+249">🇸🇩 Sudan +249</option>
+<option value="+268">🇸🇿 Eswatini +268</option>
+<option value="+255">🇹🇿 Tanzania +255</option>
+<option value="+228">🇹🇬 Togo +228</option>
+<option value="+216">🇹🇳 Tunisia +216</option>
+<option value="+256">🇺🇬 Uganda +256</option>
+<option value="+260">🇿🇲 Zambia +260</option>
+<option value="+263">🇿🇼 Zimbabwe +263</option>
+<option value="+43">🇦🇹 Austria +43</option>
+<option value="+32">🇧🇪 Belgium +32</option>
+<option value="+359">🇧🇬 Bulgaria +359</option>
+<option value="+385">🇭🇷 Croatia +385</option>
+<option value="+357">🇨🇾 Cyprus +357</option>
+<option value="+420">🇨🇿 Czech Republic +420</option>
+<option value="+45">🇩🇰 Denmark +45</option>
+<option value="+372">🇪🇪 Estonia +372</option>
+<option value="+358">🇫🇮 Finland +358</option>
+<option value="+33">🇫🇷 France +33</option>
+<option value="+49">🇩🇪 Germany +49</option>
+<option value="+30">🇬🇷 Greece +30</option>
+<option value="+36">🇭🇺 Hungary +36</option>
+<option value="+353">🇮🇪 Ireland +353</option>
+<option value="+39">🇮🇹 Italy +39</option>
+<option value="+371">🇱🇻 Latvia +371</option>
+<option value="+370">🇱🇹 Lithuania +370</option>
+<option value="+352">🇱🇺 Luxembourg +352</option>
+<option value="+356">🇲🇹 Malta +356</option>
+<option value="+31">🇳🇱 Netherlands +31</option>
+<option value="+48">🇵🇱 Poland +48</option>
+<option value="+351">🇵🇹 Portugal +351</option>
+<option value="+40">🇷🇴 Romania +40</option>
+<option value="+421">🇸🇰 Slovakia +421</option>
+<option value="+386">🇸🇮 Slovenia +386</option>
+<option value="+34">🇪🇸 Spain +34</option>
+<option value="+46">🇸🇪 Sweden +46</option>
+<option value="+41">🇨🇭 Switzerland +41</option>
+<option value="+44">🇬🇧 United Kingdom +44</option>
+<option value="+380">🇺🇦 Ukraine +380</option>
+<option value="+1">🇺🇸 USA +1</option>
+<option value="+1">🇨🇦 Canada +1</option>
+<option value="+54">🇦🇷 Argentina +54</option>
+<option value="+55">🇧🇷 Brazil +55</option>
+<option value="+56">🇨🇱 Chile +56</option>
+<option value="+57">🇨🇴 Colombia +57</option>
+<option value="+506">🇨🇷 Costa Rica +506</option>
+<option value="+53">🇨🇺 Cuba +53</option>
+<option value="+593">🇪🇨 Ecuador +593</option>
+<option value="+503">🇸🇻 El Salvador +503</option>
+<option value="+502">🇬🇹 Guatemala +502</option>
+<option value="+509">🇭🇹 Haiti +509</option>
+<option value="+504">🇭🇳 Honduras +504</option>
+<option value="+52">🇲🇽 Mexico +52</option>
+<option value="+505">🇳🇮 Nicaragua +505</option>
+<option value="+507">🇵🇦 Panama +507</option>
+<option value="+595">🇵🇾 Paraguay +595</option>
+<option value="+51">🇵🇪 Peru +51</option>
+<option value="+1">🇵🇷 Puerto Rico +1</option>
+<option value="+1">🇩🇴 Dominican Republic +1</option>
+<option value="+598">🇺🇾 Uruguay +598</option>
+<option value="+58">🇻🇪 Venezuela +58</option>
+<option value="+61">🇦🇺 Australia +61</option>
+<option value="+64">🇳🇿 New Zealand +64</option>
+<option value="+675">🇵🇬 Papua New Guinea +675</option>
+<option value="+682">🇨🇰 Cook Islands +682</option>
+<option value="+679">🇫🇯 Fiji +679</option>
+<option value="+689">🇵🇫 French Polynesia +689</option>
+<option value="+687">🇳🇨 New Caledonia +687</option>
+<option value="+685">🇼🇸 Samoa +685</option>
+<option value="+676">🇹🇴 Tonga +676</option>
+<option value="+7">🇷🇺 Russia +7</option>
+<option value="+994">🇦🇿 Azerbaijan +994</option>
+<option value="+375">🇧🇾 Belarus +375</option>
+<option value="+373">🇲🇩 Moldova +373</option>
+                        </select>
+                        <input type="tel" id="phone" placeholder="501234567" required style="background: #1A1A1A; border: 1px solid #3A3A3A; color: #FFFFFF;">
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <label for="country" style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-primary);">Country of Residence *</label>
+                    <select id="country" required style="padding: 16px 20px; background: #1A1A1A; border: 1px solid #3A3A3A; border-radius: 8px; color: #FFFFFF; font-family: 'Inter', sans-serif; width: 100%; font-size: 1rem;">
+                        <option value="">Select your country</option>
+<option value="AE">🇦🇪 United Arab Emirates</option>
+<option value="AF">🇦🇫 Afghanistan</option>
+<option value="AM">🇦🇲 Armenia</option>
+<option value="AZ">🇦🇿 Azerbaijan</option>
+<option value="BD">🇧🇩 Bangladesh</option>
+<option value="BT">🇧🇹 Bhutan</option>
+<option value="BN">🇧🇳 Brunei</option>
+<option value="KH">🇰🇭 Cambodia</option>
+<option value="CN">🇨🇳 China</option>
+<option value="CY">🇨🇾 Cyprus</option>
+<option value="GE">🇬🇪 Georgia</option>
+<option value="IN">🇮🇳 India</option>
+<option value="ID">🇮🇩 Indonesia</option>
+<option value="IR">🇮🇷 Iran</option>
+<option value="IQ">🇮🇶 Iraq</option>
+<option value="IL">🇮🇱 Israel</option>
+<option value="JP">🇯🇵 Japan</option>
+<option value="JO">🇯🇴 Jordan</option>
+<option value="KZ">🇰🇿 Kazakhstan</option>
+<option value="KW">🇰🇼 Kuwait</option>
+<option value="KG">🇰🇬 Kyrgyzstan</option>
+<option value="LA">🇱🇦 Laos</option>
+<option value="LB">🇱🇧 Lebanon</option>
+<option value="MY">🇲🇾 Malaysia</option>
+<option value="MV">🇲🇻 Maldives</option>
+<option value="MN">🇲🇳 Mongolia</option>
+<option value="MM">🇲🇲 Myanmar</option>
+<option value="NP">🇳🇵 Nepal</option>
+<option value="KP">🇰🇵 North Korea</option>
+<option value="OM">🇴🇲 Oman</option>
+<option value="PK">🇵🇰 Pakistan</option>
+<option value="PH">🇵🇭 Philippines</option>
+<option value="QA">🇶🇦 Qatar</option>
+<option value="SA">🇸🇦 Saudi Arabia</option>
+<option value="SG">🇸🇬 Singapore</option>
+<option value="KR">🇰🇷 South Korea</option>
+<option value="LK">🇱🇰 Sri Lanka</option>
+<option value="SY">🇸🇾 Syria</option>
+<option value="TJ">🇹🇯 Tajikistan</option>
+<option value="TH">🇹🇭 Thailand</option>
+<option value="TR">🇹🇷 Turkey</option>
+<option value="TM">🇹🇲 Turkmenistan</option>
+<option value="UZ">🇺🇿 Uzbekistan</option>
+<option value="VN">🇻🇳 Vietnam</option>
+<option value="YE">🇾🇪 Yemen</option>
+<option value="DZ">🇩🇿 Algeria</option>
+<option value="AO">🇦🇴 Angola</option>
+<option value="BJ">🇧🇯 Benin</option>
+<option value="BW">🇧🇼 Botswana</option>
+<option value="BF">🇧🇫 Burkina Faso</option>
+<option value="BI">🇧🇮 Burundi</option>
+<option value="CV">🇨🇻 Cape Verde</option>
+<option value="TD">🇹🇩 Chad</option>
+<option value="KM">🇰🇲 Comoros</option>
+<option value="CD">🇨🇩 Congo (DRC)</option>
+<option value="CG">🇨🇬 Congo (Republic)</option>
+<option value="CI">🇨🇮 Côte d'Ivoire</option>
+<option value="DJ">🇩🇯 Djibouti</option>
+<option value="EG">🇪🇬 Egypt</option>
+<option value="GQ">🇬🇶 Equatorial Guinea</option>
+<option value="ER">🇪🇷 Eritrea</option>
+<option value="ET">🇪🇹 Ethiopia</option>
+<option value="GA">🇬🇦 Gabon</option>
+<option value="GM">🇬🇲 Gambia</option>
+<option value="GH">🇬🇭 Ghana</option>
+<option value="GN">🇬🇳 Guinea</option>
+<option value="GW">🇬🇼 Guinea-Bissau</option>
+<option value="KE">🇰🇪 Kenya</option>
+<option value="LS">🇱🇸 Lesotho</option>
+<option value="LR">🇱🇷 Liberia</option>
+<option value="LY">🇱🇾 Libya</option>
+<option value="MG">🇲🇬 Madagascar</option>
+<option value="MW">🇲🇼 Malawi</option>
+<option value="ML">🇲🇱 Mali</option>
+<option value="MR">🇲🇷 Mauritania</option>
+<option value="MU">🇲🇺 Mauritius</option>
+<option value="MA">🇲🇦 Morocco</option>
+<option value="MZ">🇲🇿 Mozambique</option>
+<option value="NA">🇳🇦 Namibia</option>
+<option value="NE">🇳🇪 Niger</option>
+<option value="NG">🇳🇬 Nigeria</option>
+<option value="RE">🇷🇪 Réunion</option>
+<option value="RW">🇷🇼 Rwanda</option>
+<option value="ST">🇸🇹 São Tomé & Príncipe</option>
+<option value="SN">🇸🇳 Senegal</option>
+<option value="SC">🇸🇨 Seychelles</option>
+<option value="SL">🇸🇱 Sierra Leone</option>
+<option value="SO">🇸🇴 Somalia</option>
+<option value="ZA">🇿🇦 South Africa</option>
+<option value="SS">🇸🇸 South Sudan</option>
+<option value="SD">🇸🇩 Sudan</option>
+<option value="SZ">🇸🇿 Eswatini</option>
+<option value="TZ">🇹🇿 Tanzania</option>
+<option value="TG">🇹🇬 Togo</option>
+<option value="TN">🇹🇳 Tunisia</option>
+<option value="UG">🇺🇬 Uganda</option>
+<option value="ZM">🇿🇲 Zambia</option>
+<option value="ZW">🇿🇼 Zimbabwe</option>
+<option value="AL">🇦🇱 Albania</option>
+<option value="AT">🇦🇹 Austria</option>
+<option value="BY">🇧🇾 Belarus</option>
+<option value="BE">🇧🇪 Belgium</option>
+<option value="BA">🇧🇦 Bosnia & Herzegovina</option>
+<option value="BG">🇧🇬 Bulgaria</option>
+<option value="HR">🇭🇷 Croatia</option>
+<option value="CZ">🇨🇿 Czech Republic</option>
+<option value="DK">🇩🇰 Denmark</option>
+<option value="EE">🇪🇪 Estonia</option>
+<option value="FI">🇫🇮 Finland</option>
+<option value="FR">🇫🇷 France</option>
+<option value="DE">🇩🇪 Germany</option>
+<option value="GR">🇬🇷 Greece</option>
+<option value="HU">🇭🇺 Hungary</option>
+<option value="IS">🇮🇸 Iceland</option>
+<option value="IE">🇮🇪 Ireland</option>
+<option value="IT">🇮🇹 Italy</option>
+<option value="LV">🇱🇻 Latvia</option>
+<option value="LT">🇱🇹 Lithuania</option>
+<option value="LU">🇱🇺 Luxembourg</option>
+<option value="MT">🇲🇹 Malta</option>
+<option value="MD">🇲🇩 Moldova</option>
+<option value="ME">🇲🇪 Montenegro</option>
+<option value="NL">🇳🇱 Netherlands</option>
+<option value="MK">🇲🇰 North Macedonia</option>
+<option value="NO">🇳🇴 Norway</option>
+<option value="PL">🇵🇱 Poland</option>
+<option value="PT">🇵🇹 Portugal</option>
+<option value="RO">🇷🇴 Romania</option>
+<option value="RU">🇷🇺 Russia</option>
+<option value="RS">🇷🇸 Serbia</option>
+<option value="SK">🇸🇰 Slovakia</option>
+<option value="SI">🇸🇮 Slovenia</option>
+<option value="ES">🇪🇸 Spain</option>
+<option value="SE">🇸🇪 Sweden</option>
+<option value="CH">🇨🇭 Switzerland</option>
+<option value="UA">🇺🇦 Ukraine</option>
+<option value="GB">🇬🇧 United Kingdom</option>
+<option value="US">🇺🇸 United States</option>
+<option value="CA">🇨🇦 Canada</option>
+<option value="AR">🇦🇷 Argentina</option>
+<option value="BS">🇧🇸 Bahamas</option>
+<option value="BB">🇧🇧 Barbados</option>
+<option value="BZ">🇧🇿 Belize</option>
+<option value="BO">🇧🇴 Bolivia</option>
+<option value="BR">🇧🇷 Brazil</option>
+<option value="CL">🇨🇱 Chile</option>
+<option value="CO">🇨🇴 Colombia</option>
+<option value="CR">🇨🇷 Costa Rica</option>
+<option value="CU">🇨🇺 Cuba</option>
+<option value="DO">🇩🇴 Dominican Republic</option>
+<option value="EC">🇪🇨 Ecuador</option>
+<option value="SV">🇸🇻 El Salvador</option>
+<option value="GT">🇬🇹 Guatemala</option>
+<option value="HT">🇭🇹 Haiti</option>
+<option value="HN">🇭🇳 Honduras</option>
+<option value="JM">🇯🇲 Jamaica</option>
+<option value="MX">🇲🇽 Mexico</option>
+<option value="NI">🇳🇮 Nicaragua</option>
+<option value="PA">🇵🇦 Panama</option>
+<option value="PY">🇵🇾 Paraguay</option>
+<option value="PE">🇵🇪 Peru</option>
+<option value="PR">🇵🇷 Puerto Rico</option>
+<option value="TT">🇹🇹 Trinidad & Tobago</option>
+<option value="UY">🇺🇾 Uruguay</option>
+<option value="VE">🇻🇪 Venezuela</option>
+<option value="AU">🇦🇺 Australia</option>
+<option value="FJ">🇫🇯 Fiji</option>
+<option value="NZ">🇳🇿 New Zealand</option>
+<option value="PG">🇵🇬 Papua New Guinea</option>
+<option value="WS">🇼🇸 Samoa</option>
+<option value="TO">🇹🇴 Tonga</option>
+<option value="VU">🇻🇺 Vanuatu</option>
+                    </select>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <label for="interests" style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-primary);">Opportunities</label>
+                    <select id="interests" style="padding: 16px 20px; background: #1A1A1A; border: 1px solid #3A3A3A; border-radius: 8px; color: var(--text-primary); font-family: 'Inter', sans-serif; width: 100%; font-size: 1rem;">
+                        <option value="Real Estate">Real Estate</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Diamonds">Diamonds</option>
+                        <option value="Rubies">Rubies</option>
+                        <option value="All">All Asset Classes</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary waitlist-submit" id="submitBtn">
+                    <span>Join Waitlist</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+                e.preventDefault();
+                return false;
+            }
+            
+            if ((e.ctrlKey || e.metaKey) && e.key === 'u') {
+                e.preventDefault();
+                return false;
+            }
+            
+            if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+                e.preventDefault();
+                return false;
+            }
+            
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+                e.preventDefault();
+                return false;
+            }
+            
+            if (e.key === 'F12') {
+                e.preventDefault();
+                return false;
+            }
+            
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'I') {
+                e.preventDefault();
+                return false;
+            }
+            
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'J') {
+                e.preventDefault();
+                return false;
+            }
+            
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'C') {
+                e.preventDefault();
+                return false;
+            }
+            
+            if (e.metaKey && e.altKey && e.key === 'i') {
+                e.preventDefault();
+                return false;
+            }
+            
+            if (e.metaKey && e.altKey && e.key === 'j') {
+                e.preventDefault();
+                return false;
+            }
+            
+            if (e.metaKey && e.altKey && e.key === 'c') {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        window.print = function() {
+            return false;
+        };
+        
+        let devtoolsOpen = false;
+        const element = new Image();
+        Object.defineProperty(element, 'id', {
+            get: function() {
+                devtoolsOpen = true;
+                throw new Error('Developer tools detected');
+            }
+        });
+        
+        setInterval(function() {
+            devtoolsOpen = false;
+            console.log(element);
+            if (devtoolsOpen) {
+                document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:Inter,sans-serif;"><h1>Developer tools are not allowed</h1></div>';
+            }
+        }, 1000);
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        function createParticles() {
+            const container = document.getElementById('particles');
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particle.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(particle);
+            }
+        }
+        
+        document.oncontextmenu = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        };
+        
+        let pressTimer;
+        document.addEventListener('touchstart', function(e) {
+            if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+                pressTimer = setTimeout(function() {
+                    e.preventDefault();
+                    return false;
+                }, 500);
+            }
+        });
+        
+        document.addEventListener('touchend', function(e) {
+            clearTimeout(pressTimer);
+        });
+        
+        document.addEventListener('touchmove', function(e) {
+            clearTimeout(pressTimer);
+        });
+        
+        if (navigator.userAgent.match(/Android/i)) {
+            try {
+                document.body.style.webkitTouchCallout = 'none';
+            } catch(e) {}
+        }
+        
+        if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+            document.addEventListener('gesturestart', function(e) {
+                e.preventDefault();
+            });
+        }
+        
+        window.onbeforeprint = function() {
+            return false;
+        };
+        
+        if (window.opener !== null || window.parent !== window.top) {
+            window.location.href = window.location.origin;
+        }
+
+        let threeJSMesh = null;
+        let threeJSMesh2 = null;
+        let threeJSPointLight = null;
+        let threeJSAmbientLight = null;
+
+        const currencies = [
+            { code: 'USD', symbol: '$', rate: 1, name: 'US Dollars' },
+            { code: 'AED', symbol: 'AED ', rate: 3.67, name: 'UAE Dirhams' },
+            { code: 'SAR', symbol: 'SAR ', rate: 3.75, name: 'Saudi Riyals' },
+            { code: 'EUR', symbol: '€', rate: 0.93, name: 'Euros' },
+            { code: 'GBP', symbol: '£', rate: 0.79, name: 'British Pounds' },
+            { code: 'KWD', symbol: 'KWD ', rate: 0.31, name: 'Kuwaiti Dinars' },
+            { code: 'QAR', symbol: 'QAR ', rate: 3.64, name: 'Qatari Riyals' },
+            { code: 'OMR', symbol: 'OMR ', rate: 0.38, name: 'Omani Rials' }
+        ];
+
+        let currentCurrencyIndex = 0;
+
+        async function fetchExchangeRates() {
+            try {
+                const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
+                const data = await response.json();
+                
+                if (data && data.rates) {
+                    currencies.forEach(currency => {
+                        if (data.rates[currency.code]) {
+                            currency.rate = data.rates[currency.code];
+                        }
+                    });
+                }
+            } catch (error) {
+            }
+        }
+
+        function updateCurrency() {
+            const currency = currencies[currentCurrencyIndex];
+            const amount = (2500 * currency.rate);
+            let formattedAmount;
+            
+            if (currency.code === 'KWD' || currency.code === 'OMR') {
+                formattedAmount = amount.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+            } else if (amount >= 100) {
+                formattedAmount = amount.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+            } else {
+                formattedAmount = amount.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+            }
+            
+            const element = document.getElementById('currencyAmount');
+            
+            if (element) {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(-10px)';
+                
+                setTimeout(() => {
+                    element.textContent = `${currency.symbol}${formattedAmount}`;
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }, 300);
+            }
+            
+            currentCurrencyIndex = (currentCurrencyIndex + 1) % currencies.length;
+        }
+
+        function showCookieConsent() {
+            const consent = localStorage.getItem('cookieConsent');
+            if (!consent) {
+                setTimeout(() => {
+                    const banner = document.getElementById('cookieConsent');
+                    if (banner) banner.classList.add('show');
+                }, 1500);
+            }
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            const banner = document.getElementById('cookieConsent');
+            if (banner) banner.classList.remove('show');
+            
+            setTimeout(() => detectAndShowLanguage(), 800);
+        }
+
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            const banner = document.getElementById('cookieConsent');
+            if (banner) banner.classList.remove('show');
+        }
+
+        let detectedLanguage = null;
+
+        async function detectAndShowLanguage() {
+            const languagePref = localStorage.getItem('languagePreference');
+            
+            if (languagePref) {
+                applyLanguage(languagePref);
+                return;
+            }
+            
+            try {
+                const response = await fetch('https://ipapi.co/json/');
+                const data = await response.json();
+                
+                const languageMap = {
+                    'SA': { code: 'ar', name: 'العربية', englishName: 'Arabic', dir: 'rtl' },
+                    'AE': { code: 'ar', name: 'العربية', englishName: 'Arabic', dir: 'rtl' },
+                    'KW': { code: 'ar', name: 'العربية', englishName: 'Arabic', dir: 'rtl' },
+                    'QA': { code: 'ar', name: 'العربية', englishName: 'Arabic', dir: 'rtl' },
+                    'OM': { code: 'ar', name: 'العربية', englishName: 'Arabic', dir: 'rtl' },
+                    'BH': { code: 'ar', name: 'العربية', englishName: 'Arabic', dir: 'rtl' },
+                    'EG': { code: 'ar', name: 'العربية', englishName: 'Arabic', dir: 'rtl' },
+                    'JO': { code: 'ar', name: 'العربية', englishName: 'Arabic', dir: 'rtl' },
+                    'LB': { code: 'ar', name: 'العربية', englishName: 'Arabic', dir: 'rtl' },
+                    'FR': { code: 'fr', name: 'Français', englishName: 'French', dir: 'ltr' },
+                    'ES': { code: 'es', name: 'Español', englishName: 'Spanish', dir: 'ltr' },
+                    'DE': { code: 'de', name: 'Deutsch', englishName: 'German', dir: 'ltr' },
+                    'IT': { code: 'it', name: 'Italiano', englishName: 'Italian', dir: 'ltr' },
+                    'PT': { code: 'pt', name: 'Português', englishName: 'Portuguese', dir: 'ltr' },
+                    'BR': { code: 'pt', name: 'Português', englishName: 'Portuguese', dir: 'ltr' },
+                    'RU': { code: 'ru', name: 'Русский', englishName: 'Russian', dir: 'ltr' },
+                    'CN': { code: 'zh', name: '中文', englishName: 'Chinese', dir: 'ltr' },
+                    'JP': { code: 'ja', name: '日本語', englishName: 'Japanese', dir: 'ltr' },
+                    'KR': { code: 'ko', name: '한국어', englishName: 'Korean', dir: 'ltr' }
+                };
+                
+                const userCountry = data.country_code;
+                detectedLanguage = languageMap[userCountry];
+                
+                if (detectedLanguage) {
+                    showLanguageBanner(detectedLanguage);
+                } else {
+                    selectLanguage('en');
+                }
+            } catch (error) {
+                selectLanguage('en');
+            }
+        }
+
+        function showLanguageBanner(language) {
+            const banner = document.getElementById('languageBanner');
+            const regionalBtn = document.getElementById('regionalLangBtn');
+            const bannerText = document.getElementById('languageBannerText');
+            
+            if (!banner) {
+                return;
+            }
+            
+            regionalBtn.textContent = language.name;
+            regionalBtn.onclick = () => selectRegionalLanguage();
+            
+            bannerText.innerHTML = `Would you like to view this site in <strong>${language.englishName}</strong> or continue in <strong>English</strong>?`;
+            
+            setTimeout(() => {
+                banner.classList.add('show');
+            }, 500);
+        }
+
+        function selectRegionalLanguage() {
+            if (detectedLanguage) {
+                selectLanguage(detectedLanguage.code);
+            }
+        }
+
+        function selectLanguage(langCode) {
+            localStorage.setItem('languagePreference', langCode);
+            const banner = document.getElementById('languageBanner');
+            if (banner) banner.classList.remove('show');
+            
+            applyLanguage(langCode);
+        }
+
+        function applyLanguage(langCode) {
+            
+            if (langCode === 'en') {
+                document.documentElement.setAttribute('lang', 'en');
+                document.documentElement.setAttribute('dir', 'ltr');
+                const cookies = document.cookie.split(';');
+                for (let cookie of cookies) {
+                    if (cookie.trim().startsWith('googtrans=')) {
+                        document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+                    }
+                }
+                return;
+            }
+            
+            document.documentElement.setAttribute('lang', langCode);
+            if (langCode === 'ar') {
+                document.documentElement.setAttribute('dir', 'rtl');
+            } else {
+                document.documentElement.setAttribute('dir', 'ltr');
+            }
+            
+            const googleLangMap = {
+                'ar': 'ar',
+                'fr': 'fr',
+                'es': 'es',
+                'de': 'de',
+                'it': 'it',
+                'pt': 'pt',
+                'ru': 'ru',
+                'zh': 'zh-CN',
+                'ja': 'ja',
+                'ko': 'ko'
+            };
+            
+            const targetLang = googleLangMap[langCode] || langCode;
+            
+            document.cookie = `googtrans=/en/${targetLang}; path=/`;
+            
+            if (!window.googleTranslateLoaded) {
+                const script = document.createElement('script');
+                script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+                document.head.appendChild(script);
+                
+                window.googleTranslateElementInit = function() {
+                    new google.translate.TranslateElement({
+                        pageLanguage: 'en',
+                        includedLanguages: 'ar,fr,es,de,it,pt,ru,zh-CN,ja,ko',
+                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                        autoDisplay: false
+                    }, 'google_translate_element');
+                    window.googleTranslateLoaded = true;
+                    
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 1000);
+                };
+            } else {
+                window.location.reload();
+            }
+        }
+
+        function openPolicyModal(type) {
+            const modalMap = {
+                'terms': 'termsModal',
+                'privacy': 'privacyModal',
+                'risk': 'riskModal',
+                'cookie': 'cookiePolicyModal'
+            };
+            
+            const modalId = modalMap[type];
+            if (modalId) {
+                const modal = document.getElementById(modalId);
+                modal.style.display = 'flex';
+                setTimeout(() => modal.classList.add('is-visible'), 10);
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closePolicyModal(type) {
+            const modalMap = {
+                'terms': 'termsModal',
+                'privacy': 'privacyModal',
+                'risk': 'riskModal',
+                'cookie': 'cookiePolicyModal'
+            };
+            
+            const modalId = modalMap[type];
+            if (modalId) {
+                const modal = document.getElementById(modalId);
+                modal.classList.remove('is-visible');
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }, 300);
+            }
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('is-visible');
+                setTimeout(() => {
+                    event.target.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }, 300);
+            }
+        }
+
+        function openModal() {
+            const modal = document.getElementById('waitlistModal');
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('is-visible'), 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('waitlistModal');
+            modal.classList.remove('is-visible');
+            setTimeout(() => modal.style.display = 'none', 300);
+        }
+
+        let playbookShown = false;
+        let scrollTime = 0;
+
+        function checkPlaybookTrigger() {
+            if (playbookShown) return;
+            
+            const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollY > 100) {
+                scrollTime += 100;
+                
+                if (scrollTime >= 3000) {
+                    showPlaybookPopup();
+                }
+            } else {
+                scrollTime = 0;
+            }
+        }
+
+        function showPlaybookPopup() {
+            if (playbookShown) return;
+            
+            const hasSeenPlaybook = sessionStorage.getItem('playbookSeen');
+            if (hasSeenPlaybook) return;
+            
+            playbookShown = true;
+            const overlay = document.getElementById('playbookOverlay');
+            const popup = document.getElementById('playbookPopup');
+            
+            if (overlay && popup) {
+                overlay.classList.add('show');
+                popup.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closePlaybookPopup() {
+            const overlay = document.getElementById('playbookOverlay');
+            const popup = document.getElementById('playbookPopup');
+            
+            if (overlay && popup) {
+                overlay.classList.remove('show');
+                popup.classList.remove('show');
+                document.body.style.overflow = 'auto';
+                sessionStorage.setItem('playbookSeen', 'true');
+            }
+        }
+
+        function updateSliderValue() {
+            const slider = document.getElementById('playbookSlider');
+            const display = document.getElementById('sliderValue');
+            const trackFill = document.getElementById('sliderTrackFill');
+            if (!slider || !display) return;
+            
+            // Calculate value: 2500 + (step * 500)
+            // Range: 0-195 steps (0 = $2,500, 195 = $100,000)
+            const step = parseInt(slider.value);
+            const value = 2500 + (step * 500);
+            
+            // Format with commas
+            const formattedValue = '$' + value.toLocaleString('en-US');
+            display.textContent = formattedValue;
+            
+            // Update track fill width - always show at least the start point
+            const percentage = (step / 195) * 100;
+            if (trackFill) {
+                if (step === 0) {
+                    trackFill.style.width = '0px';
+                } else {
+                    trackFill.style.width = `calc(${percentage}%)`;
+                }
+            }
+        }
+
+        async function handlePlaybookSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('playbookFullName').value.trim();
+            const email = document.getElementById('playbookEmail').value.trim();
+            const countryCode = document.getElementById('playbookCountryCode').value;
+            const phone = document.getElementById('playbookPhone').value.trim();
+            const country = document.getElementById('playbookCountry').value;
+            const sliderValue = document.getElementById('sliderValue').textContent;
+            const assetInterest = document.getElementById('playbookAssetInterest').value;
+            
+            // Validation
+            if (!name || name.length < 2) {
+                alert('Please enter a valid name');
+                return;
+            }
+            
+            if (!validateEmail(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            if (!phone || phone.length < 6) {
+                alert('Please enter a valid phone number');
+                return;
+            }
+            
+            if (!country) {
+                alert('Please select your country of residence');
+                return;
+            }
+            
+            if (!assetInterest) {
+                alert('Please select your asset interest');
+                return;
+            }
+            
+            // Save to CSV
+            const timestamp = new Date().toISOString();
+            const fullPhone = countryCode + phone;
+            const source = 'Playbook Download';
+            
+            // CSV format matching waitlist: Timestamp,Name,Email,Phone,Country,Interests,Source
+            const csvLine = `"${timestamp}","${name}","${email}","${fullPhone}","${country}","${assetInterest} (${sliderValue})","${source}"\n`;
+            
+            // Get existing data or create header
+            const csvHeader = '"Timestamp","Name","Email","Phone","Country","Interests","Source"\n';
+            const existingData = localStorage.getItem('waitlistData') || csvHeader;
+            const newData = existingData + csvLine;
+            localStorage.setItem('waitlistData', newData);
+            
+            // Download CSV
+            const blob = new Blob([newData], { type: 'text/csv;charset=utf-8;' });
+            const csvUrl = URL.createObjectURL(blob);
+            const csvLink = document.createElement('a');
+            csvLink.href = csvUrl;
+            csvLink.download = 'waitlist.csv';
+            csvLink.style.display = 'none';
+            document.body.appendChild(csvLink);
+            csvLink.click();
+            document.body.removeChild(csvLink);
+            URL.revokeObjectURL(csvUrl);
+            
+            // Show success message
+            const formContent = document.getElementById('playbookFormContent');
+            const successContent = document.getElementById('playbookSuccess');
+            
+            if (formContent && successContent) {
+                formContent.style.display = 'none';
+                successContent.classList.add('show');
+            }
+            
+            // Download playbook PDF
+            setTimeout(() => {
+                const pdfLink = document.createElement('a');
+                pdfLink.href = 'media/clickcap';
+                pdfLink.download = 'ClickCapital-Opportunity-Guide.pdf';
+                pdfLink.style.display = 'none';
+                document.body.appendChild(pdfLink);
+                pdfLink.click();
+                document.body.removeChild(pdfLink);
+            }, 500);
+            
+            // Close popup after delay
+            setTimeout(() => {
+                closePlaybookPopup();
+                if (formContent && successContent) {
+                    formContent.style.display = 'block';
+                    successContent.classList.remove('show');
+                    document.getElementById('playbookForm').reset();
+                    updateSliderValue();
+                }
+            }, 4000);
+        }
+
+        setInterval(checkPlaybookTrigger, 100);
+
+        window.addEventListener('load', function() {
+            console.log('Playbook popup system initialized');
+        });
+
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        function validatePhone(phone) {
+            const re = /^[0-9]{6,15}$/;
+            return re.test(phone.replace(/\s/g, ''));
+        }
+
+        function validateFullName(name) {
+            return name.trim().length >= 2 && /^[a-zA-Z\s]+$/.test(name);
+        }
+
+        function showValidationError(fieldId, message) {
+            const field = document.getElementById(fieldId);
+            const existingError = field.parentElement.querySelector('.validation-error');
+            if (existingError) {
+                existingError.remove();
+            }
+            
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'validation-error';
+            errorDiv.style.color = '#ff4444';
+            errorDiv.style.fontSize = '0.875rem';
+            errorDiv.style.marginTop = '5px';
+            errorDiv.textContent = message;
+            field.parentElement.appendChild(errorDiv);
+            field.style.borderColor = '#ff4444';
+        }
+
+        function clearValidationError(fieldId) {
+            const field = document.getElementById(fieldId);
+            const existingError = field.parentElement.querySelector('.validation-error');
+            if (existingError) {
+                existingError.remove();
+            }
+            field.style.borderColor = '#3A3A3A';
+        }
+
+        async function handleSubmit(e) {
+            e.preventDefault();
+            
+            ['fullName', 'email', 'phone'].forEach(clearValidationError);
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const successMsg = document.getElementById('successMessage');
+            
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            
+            let hasErrors = false;
+            
+            if (!validateFullName(fullName)) {
+                showValidationError('fullName', 'Please enter a valid full name (letters only, minimum 2 characters)');
+                hasErrors = true;
+            }
+            
+            if (!validateEmail(email)) {
+                showValidationError('email', 'Please enter a valid email address');
+                hasErrors = true;
+            }
+            
+            if (!validatePhone(phone)) {
+                showValidationError('phone', 'Please enter a valid phone number (6-15 digits)');
+                hasErrors = true;
+            }
+            
+            if (hasErrors) {
+                return;
+            }
+            
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span>Submitting...</span>';
+            
+            try {
+                let userIP = 'Unknown';
+                try {
+                    const ipResponse = await fetch('https://api.ipify.org?format=json');
+                    const ipData = await ipResponse.json();
+                    userIP = ipData.ip;
+                } catch (e) {
+                }
+                
+                const formData = {
+                    fullName: fullName,
+                    email: email,
+                    countryCode: document.getElementById('countryCode').value,
+                    phone: phone,
+                    country: document.getElementById('country').value,
+                    interests: document.getElementById('interests').value,
+                    timestamp: new Date().toISOString(),
+                    ipAddress: userIP
+                };
+                
+                const response = await fetch('save_waitlist_simple.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                console.log('Response status:', response.status);
+                console.log('Response headers:', response.headers);
+                
+                const responseText = await response.text();
+                console.log('Raw response:', responseText);
+                
+                let result;
+                try {
+                    result = JSON.parse(responseText);
+                    console.log('Parsed JSON result:', result);
+                } catch (parseError) {
+                    console.error('Failed to parse JSON:', parseError);
+                    console.log('Response was not valid JSON. Showing raw response to user.');
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<span>Join Waitlist</span><i class="fas fa-arrow-right"></i>';
+                    alert('Server returned invalid response. Please check console for details and email us at info@clickcapital.com.\n\nRaw response:\n' + responseText);
+                    return;
+                }
+                
+                if (result.success) {
+                    if (typeof fbq !== 'undefined') {
+                        fbq('track', 'Lead', {
+                            content_name: 'Waitlist Signup',
+                            content_category: 'Waitlist',
+                            value: 2500.00,
+                            currency: 'USD'
+                        });
+                    }
+                    
+                    successMsg.style.display = 'block';
+                    e.target.reset();
+                    
+                    setTimeout(() => {
+                        closeModal();
+                        successMsg.style.display = 'none';
+                    }, 3000);
+                } else {
+                    console.error('Server reported error:', result);
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<span>Join Waitlist</span><i class="fas fa-arrow-right"></i>';
+                    alert('Error from server: ' + result.message + '\n\nPlease contact info@clickcapital.com for assistance.');
+                }
+                
+            } catch (error) {
+                console.error('Fetch error:', error);
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span>Join Waitlist</span><i class="fas fa-arrow-right"></i>';
+                alert('Unable to submit form. Please email us directly at info@clickcapital.com with your details.');
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            createParticles();
+            
+            const savedLang = localStorage.getItem('languagePreference');
+            if (savedLang && savedLang !== 'en') {
+                applyLanguage(savedLang);
+            }
+            
+            showCookieConsent();
+            fetchExchangeRates();
+            
+            setInterval(updateCurrency, 3000);
+
+            gsap.from('.hero-content > *', {
+                opacity: 0,
+                y: 30,
+                duration: 1,
+                stagger: 0.2,
+                ease: 'power3.out'
+            });
+
+            document.querySelectorAll('.stat-number').forEach(el => {
+                const target = el.getAttribute('data-target');
+                if (!target) return;
+                
+                const finalValue = parseFloat(target);
+                const hasPlus = el.textContent.includes('+');
+                const hasDollar = el.textContent.includes('$');
+                const label = el.nextElementSibling.textContent.toLowerCase();
+                
+                gsap.to(el, {
+                    innerText: finalValue,
+                    duration: 2.5,
+                    ease: "power2.out",
+                    scrollTrigger: { trigger: el, start: "top 85%", once: true },
+                    snap: { innerText: 1 },
+                    onUpdate: function() {
+                        let value = Math.floor(parseFloat(this.targets()[0].innerText));
+                        let formatted;
+                        
+                        if (hasDollar || label.includes('usd') || label.includes('minimum')) {
+                            formatted = `$${value.toLocaleString()}`;
+                        } else if (hasPlus || label.includes('countries')) {
+                            formatted = `${value}+`;
+                        } else {
+                            formatted = value;
+                        }
+                        
+                        this.targets()[0].textContent = formatted;
+                    }
+                });
+            });
+
+            gsap.utils.toArray(".feature-card").forEach((card, i) => {
+                gsap.from(card, {
+                    opacity: 0,
+                    y: 60,
+                    duration: 0.8,
+                    delay: i * 0.15,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 85%",
+                        once: true
+                    }
+                });
+            });
+
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const item = button.closest('.faq-item');
+                    const isActive = item.classList.contains('active');
+                    
+                    document.querySelectorAll('.faq-item.active').forEach(activeItem => {
+                        if (activeItem !== item) {
+                            activeItem.classList.remove('active');
+                        }
+                    });
+                    
+                    item.classList.toggle('active', !isActive);
+                });
+            });
+
+            loadPropertyImages();
+        });
+
+        async function loadPropertyImages() {
+            const properties = [
+                { folder: 'royal bay plam jumeirah', selector: '.royal-bay-bg' },
+                { folder: 'danube breez studio', selector: '.danube-breez-bg' },
+                { folder: 'azizi mina palm jumeirah', selector: '.azizi-mina-bg' },
+                { folder: 'damac islands villa', selector: '.damac-islands-bg' },
+                { folder: 'waha living', selector: '.waha-living-bg' }
+            ];
+
+            const formats = ['jpg', 'jpeg', 'png', 'webp'];
+
+            for (const property of properties) {
+                const elements = document.querySelectorAll(property.selector);
+                let imageLoaded = false;
+
+                for (const format of formats) {
+                    if (imageLoaded) break;
+
+                    const imagePath = `media/${property.folder}/1.${format}`;
+                    
+                    try {
+                        const img = new Image();
+                        await new Promise((resolve, reject) => {
+                            img.onload = () => {
+                                elements.forEach(el => {
+                                    el.style.backgroundImage = `url('${imagePath}')`;
+                                });
+                                imageLoaded = true;
+                                resolve();
+                            };
+                            img.onerror = () => reject();
+                            img.src = imagePath;
+                        });
+                    } catch (error) {
+                        continue;
+                    }
+                }
+
+                if (!imageLoaded) {
+                }
+            }
+        }
+
+        function initThreeJS() {
+            const canvas = document.getElementById('three-js-canvas');
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            
+            threeJSAmbientLight = new THREE.AmbientLight(0x0a0a0a, 8);
+            scene.add(threeJSAmbientLight);
+            
+            threeJSPointLight = new THREE.PointLight(0x00ffc8, 40, 100);
+            threeJSPointLight.position.set(10, 10, 10);
+            scene.add(threeJSPointLight);
+
+            const geometry = new THREE.IcosahedronGeometry(3.5, 1);
+            const material = new THREE.MeshPhongMaterial({
+                color: 0x00ffc8,
+                wireframe: true,
+                transparent: true,
+                opacity: 0.2,
+                shininess: 80,
+            });
+            threeJSMesh = new THREE.Mesh(geometry, material);
+            scene.add(threeJSMesh);
+
+            const geometry2 = new THREE.TorusGeometry(5, 0.5, 16, 100);
+            const material2 = new THREE.MeshPhongMaterial({
+                color: 0x30D158,
+                wireframe: true,
+                transparent: true,
+                opacity: 0.15,
+            });
+            threeJSMesh2 = new THREE.Mesh(geometry2, material2);
+            scene.add(threeJSMesh2);
+
+            camera.position.z = 12;
+            
+            let mouseX = 0;
+            let mouseY = 0;
+            
+            document.addEventListener('mousemove', (event) => {
+                mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+                mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+            });
+
+            function animate() {
+                requestAnimationFrame(animate);
+                
+                threeJSMesh.rotation.x += 0.0004;
+                threeJSMesh.rotation.y += 0.0008;
+                
+                threeJSMesh2.rotation.x += 0.0003;
+                threeJSMesh2.rotation.y -= 0.0006;
+
+                threeJSMesh.position.x += (mouseX * 0.6 - threeJSMesh.position.x) * 0.03;
+                threeJSMesh.position.y += (mouseY * 0.6 - threeJSMesh.position.y) * 0.03;
+                
+                threeJSMesh2.position.x += (mouseX * 0.4 - threeJSMesh2.position.x) * 0.02;
+                threeJSMesh2.position.y += (mouseY * 0.4 - threeJSMesh2.position.y) * 0.02;
+                
+                renderer.render(scene, camera);
+            }
+
+            function onWindowResize() {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            }
+
+            window.addEventListener('resize', onWindowResize);
+            animate();
+        }
+        
+        initThreeJS();
+    </script>
+
+    <div id="termsModal" class="modal">
+        <div class="modal-content policy-modal-content">
+            <span class="close-button" onclick="closePolicyModal('terms')">&times;</span>
+            <h2 class="gradient-text">Terms of Service</h2>
+            <p class="policy-last-updated">Last Updated: December 2024 | Subject to change without notice</p>
+            
+            <h3>1. Acceptance of Terms</h3>
+            <p>By accessing or using the Click Capital platform, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. <strong>These terms are subject to change at any time without prior notice</strong>, and continued use of the platform constitutes acceptance of such changes.</p>
+            
+            <h3>2. Platform Description</h3>
+            <p>Click Capital provides a digital platform for fractional ownership of real estate properties and commodities including gold, diamonds, and rubies. The platform facilitates:</p>
+            <ul>
+                <li>Digital access to curated property and commodity opportunities</li>
+                <li>Fractional ownership through tokenized representations</li>
+                <li>Secondary marketplace for trading ownership tokens</li>
+                <li>Portfolio tracking and management tools</li>
+                <li>Distribution processing for rental income and other benefits</li>
+            </ul>
+            
+            <h3>3. No Financial Advice</h3>
+            <p><strong>Click Capital does not provide financial, investment, legal, or tax advice.</strong> All information on the platform is for informational purposes only. You should consult with qualified professionals before making any decisions. The platform provides opportunities to explore, but makes no recommendations or suggestions.</p>
+            
+            <h3>4. Eligibility and Account</h3>
+            <p>You must be at least 18 years old and legally able to enter into contracts in your jurisdiction. You agree to provide accurate information during registration and complete KYC verification as required by applicable regulations.</p>
+            
+            <h3>5. Platform Modifications</h3>
+            <p><strong>Click Capital reserves the right to modify, suspend, or discontinue any aspect of the platform at any time without notice.</strong> We may update features, change fee structures, alter asset offerings, or modify terms and conditions as needed for operational, legal, or regulatory reasons.</p>
+            
+            <h3>6. User Responsibilities</h3>
+            <p>You are solely responsible for:</p>
+            <ul>
+                <li>Maintaining the confidentiality of your account credentials</li>
+                <li>All activities that occur under your account</li>
+                <li>Compliance with local laws and regulations</li>
+                <li>Understanding the nature and risks of fractional ownership</li>
+                <li>Your decisions regarding participation in opportunities</li>
+            </ul>
+            
+            <h3>7. Intellectual Property</h3>
+            <p>All content, trademarks, and data on the Click Capital platform are the property of Click Capital or its licensors. You may not reproduce, distribute, modify, or create derivative works without express written permission.</p>
+            
+            <h3>8. Limitation of Liability</h3>
+            <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW, CLICK CAPITAL SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES</strong> resulting from your use or inability to use the platform, including but not limited to loss of profits, data, or opportunities.</p>
+            
+            <h3>9. Changes Without Notice</h3>
+            <p><strong>All terms, policies, fees, features, and platform operations are subject to change without prior notice or consent.</strong> It is your responsibility to review terms periodically. Continued use constitutes acceptance of changes.</p>
+            
+            <h3>10. Governing Law</h3>
+            <p>These terms shall be governed by the laws of the United Arab Emirates. Any disputes shall be subject to the exclusive jurisdiction of courts in Sharjah, UAE.</p>
+        </div>
+    </div>
+
+    <div id="privacyModal" class="modal">
+        <div class="modal-content policy-modal-content">
+            <span class="close-button" onclick="closePolicyModal('privacy')">&times;</span>
+            <h2 class="gradient-text">Privacy Policy</h2>
+            <p class="policy-last-updated">Last Updated: December 2024 | Subject to change without notice</p>
+            
+            <h3>1. Information We Collect</h3>
+            <p>Click Capital collects information necessary to provide platform services and comply with regulatory requirements:</p>
+            <ul>
+                <li><strong>Personal Information:</strong> Name, email, phone number, date of birth, nationality</li>
+                <li><strong>Identity Verification:</strong> Government ID, proof of address, facial recognition data</li>
+                <li><strong>Financial Information:</strong> Bank details, transaction history, portfolio data</li>
+                <li><strong>Usage Data:</strong> Device information, IP address, browsing patterns, interaction data</li>
+                <li><strong>Communications:</strong> Support inquiries, feedback, correspondence</li>
+            </ul>
+            
+            <h3>2. How We Use Your Information</h3>
+            <p>We use collected information to:</p>
+            <ul>
+                <li>Provide and improve platform services</li>
+                <li>Process transactions and distributions</li>
+                <li>Comply with KYC/AML regulations and legal obligations</li>
+                <li>Communicate important updates and notifications</li>
+                <li>Analyze usage patterns and enhance user experience</li>
+                <li>Prevent fraud and ensure platform security</li>
+            </ul>
+            
+            <h3>3. Information Sharing</h3>
+            <p>We may share your information with:</p>
+            <ul>
+                <li><strong>Service Providers:</strong> Payment processors, verification services, cloud hosting</li>
+                <li><strong>Regulatory Authorities:</strong> As required by law or regulatory requirements</li>
+                <li><strong>Professional Advisors:</strong> Legal, financial, and compliance consultants</li>
+                <li><strong>Business Transfers:</strong> In connection with mergers, acquisitions, or asset sales</li>
+            </ul>
+            
+            <h3>4. Data Security</h3>
+            <p>We implement industry-standard security measures including encryption, secure servers, and access controls. However, <strong>no system is completely secure and we cannot guarantee absolute security of your data.</strong></p>
+            
+            <h3>5. Data Retention</h3>
+            <p>We retain your information as long as necessary for platform operations, legal obligations, and regulatory compliance. <strong>Retention periods are subject to change without notice.</strong></p>
+            
+            <h3>6. Your Rights</h3>
+            <p>Depending on your jurisdiction, you may have rights to:</p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Request corrections to inaccurate data</li>
+                <li>Request deletion (subject to legal requirements)</li>
+                <li>Object to certain processing activities</li>
+                <li>Data portability (where applicable)</li>
+            </ul>
+            
+            <h3>7. Cookies and Tracking</h3>
+            <p>We use cookies and similar technologies to enhance your experience, analyze usage, and provide personalized content. See our Cookie Policy for details.</p>
+            
+            <h3>8. International Transfers</h3>
+            <p>Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place for international data transfers.</p>
+            
+            <h3>9. Policy Changes</h3>
+            <p><strong>This privacy policy is subject to change at any time without prior notice.</strong> Continued use of the platform constitutes acceptance of updated privacy practices.</p>
+            
+            <h3>10. Contact Us</h3>
+            <p>For privacy-related inquiries, contact us.</p>
+        </div>
+    </div>
+
+    <div id="riskModal" class="modal">
+        <div class="modal-content policy-modal-content">
+            <span class="close-button" onclick="closePolicyModal('risk')">&times;</span>
+            <h2 class="gradient-text">Risk Disclosure</h2>
+            <p class="policy-last-updated">Last Updated: December 2024 | Subject to change without notice</p>
+            
+            <h3>Important Notice</h3>
+            <p><strong>Fractional ownership of real estate and commodities involves significant risks. You may lose some or all of your participation amount.</strong> This disclosure outlines key risks, but may not cover all potential risks. <strong>This disclosure is subject to change without notice.</strong></p>
+            
+            <h3>1. Market Risk</h3>
+            <p>Property values and commodity prices fluctuate based on market conditions, economic factors, supply and demand, and other variables beyond our control. Past performance does not indicate future results. Market downturns can result in decreased values and potential losses.</p>
+            
+            <h3>2. Liquidity Risk</h3>
+            <p>While Click Capital provides a secondary marketplace, there is no guarantee you will be able to sell your fractional ownership when desired or at your preferred price. Market demand varies, and you may need to accept lower prices or wait extended periods to complete a sale.</p>
+            
+            <h3>3. Property-Specific Risks</h3>
+            <p>Real estate opportunities carry risks including:</p>
+            <ul>
+                <li>Vacancy periods resulting in reduced or no rental income</li>
+                <li>Property damage requiring significant repair costs</li>
+                <li>Tenant defaults or legal disputes</li>
+                <li>Unexpected maintenance or capital expenditure needs</li>
+                <li>Changes in local real estate markets or regulations</li>
+                <li>Natural disasters, environmental issues, or force majeure events</li>
+            </ul>
+            
+            <h3>4. Commodity Risks</h3>
+            <p>Physical commodities (gold, diamonds, rubies) involve risks including:</p>
+            <ul>
+                <li>Price volatility based on global market conditions</li>
+                <li>Currency exchange rate fluctuations</li>
+                <li>Storage and insurance costs</li>
+                <li>Changes in commodity demand and market sentiment</li>
+                <li>Authenticity concerns despite certification processes</li>
+            </ul>
+            
+            <h3>5. Platform Risk</h3>
+            <p>Risks related to the Click Capital platform include:</p>
+            <ul>
+                <li>Technology failures, outages, or cybersecurity breaches</li>
+                <li>Changes to platform features, fees, or operations without notice</li>
+                <li>Platform suspension or discontinuation</li>
+                <li>Regulatory changes affecting platform operations</li>
+                <li>Third-party service provider failures</li>
+            </ul>
+            
+            <h3>6. Regulatory Risk</h3>
+            <p><strong>Click Capital is pending regulatory approval.</strong> Changes in regulations could affect platform operations, available opportunities, or your ability to participate. Regulatory developments are unpredictable and subject to change without notice.</p>
+            
+            <h3>7. No Guaranteed Returns</h3>
+            <p><strong>There are no guaranteed returns, income, or profits.</strong> Projected yields, rental income estimates, and value appreciation projections are estimates only and may not materialize. Actual results may differ significantly from projections.</p>
+            
+            <h3>8. Concentration Risk</h3>
+            <p>Limiting participation to few properties or commodity types increases exposure to specific market risks. Diversification does not eliminate risk but may help manage exposure.</p>
+            
+            <h3>9. Tax Implications</h3>
+            <p>Fractional ownership may have tax consequences varying by jurisdiction. You are responsible for understanding and complying with all tax obligations. Click Capital does not provide tax advice.</p>
+            
+            <h3>10. No Insurance or Guarantees</h3>
+            <p>Your fractional ownership is not insured by any government agency or guarantee program. While properties and commodities may be insured against specific risks, this does not protect against market value losses.</p>
+            
+            <h3>11. Changes to Risk Disclosures</h3>
+            <p><strong>This risk disclosure is subject to change at any time without notice.</strong> Additional risks may emerge, and disclosed risks may change in magnitude or nature. You are responsible for staying informed about risks.</p>
+            
+            <h3>12. Acknowledgment</h3>
+            <p>By using Click Capital, you acknowledge understanding these risks and accept full responsibility for your participation decisions. You should only participate with amounts you can afford to lose.</p>
+        </div>
+    </div>
+
+    <div id="cookiePolicyModal" class="modal">
+        <div class="modal-content policy-modal-content">
+            <span class="close-button" onclick="closePolicyModal('cookie')">&times;</span>
+            <h2 class="gradient-text">Cookie Policy</h2>
+            <p class="policy-last-updated">Last Updated: December 2024 | Subject to change without notice</p>
+            
+            <h3>1. What Are Cookies</h3>
+            <p>Cookies are small text files stored on your device when you visit websites. They help websites remember your preferences, analyze usage, and provide personalized experiences. <strong>This cookie policy is subject to change without notice.</strong></p>
+            
+            <h3>2. Types of Cookies We Use</h3>
+            
+            <p><strong>Essential Cookies:</strong> Required for platform functionality including authentication, security, and core features. These cannot be disabled without affecting platform usability.</p>
+            
+            <p><strong>Performance Cookies:</strong> Collect anonymous usage data to help us understand how users interact with the platform and identify areas for improvement.</p>
+            
+            <p><strong>Functional Cookies:</strong> Remember your preferences such as language settings, display options, and customization choices.</p>
+            
+            <p><strong>Analytics Cookies:</strong> Help us analyze traffic patterns, user behavior, and platform effectiveness using services like Google Analytics.</p>
+            
+            <h3>3. How We Use Cookies</h3>
+            <ul>
+                <li>Maintain your logged-in session securely</li>
+                <li>Remember your preferences and settings</li>
+                <li>Analyze platform usage and performance</li>
+                <li>Improve user experience and features</li>
+                <li>Prevent fraud and enhance security</li>
+                <li>Comply with legal and regulatory requirements</li>
+            </ul>
+            
+            <h3>4. Third-Party Cookies</h3>
+            <p>We may use third-party services that set their own cookies including analytics providers, payment processors, and verification services. These third parties have their own privacy and cookie policies.</p>
+            
+            <h3>5. Your Cookie Choices</h3>
+            <p>You can control cookies through your browser settings. However, disabling certain cookies may limit platform functionality. Most browsers allow you to manage cookie preferences.</p>
+            
+            <h3>6. Changes to Cookie Policy</h3>
+            <p><strong>This cookie policy is subject to change at any time without prior notice.</strong> We recommend reviewing this policy periodically for updates.</p>
+        </div>
+    </div>
+</body>
+</html>
